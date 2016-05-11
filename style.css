@@ -61,7 +61,7 @@ ul{
 #nav{
     float: right;
     margin-right: 30px;
-    margin-top: -50px;
+    margin-top: -65px;
 }
 
 #logo{
@@ -100,6 +100,7 @@ h1{
 }
 
 #loginForm input#username {
+    margin-right: 10px;
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }

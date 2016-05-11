@@ -22,7 +22,7 @@ body {
     margin-top: -8px;
     z-index: -1;
     position: fixed;
-    font-family: sans-serif;
+    font-family: Montserrat;
     text-decoration: none;
 }
 
@@ -70,33 +70,33 @@ ul{
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: Montserrat;
     font-weight: bold;
     color: black;
     font-size: 300%;
 }
 
+/*
 #loginForm {
     width: 320px;
     padding: 20px;
     background: #fff;
-    border-radius: 5px;
-    border-top: 5px solid #ff656c;
     margin: 0 auto;
 }
+*/
 
 
 #loginForm input {
-    width: 100%;
+    width: 250px;
     height: 42px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+    border: 2px solid #000000;
     font-size: 14px;
     font-family: Montserrat;
     padding: 0 20px 0 50px;
     outline: none;
+
 }
 
 #loginForm input#username {
@@ -120,7 +120,7 @@ h1{
 }
 
 #loginForm input:active, #loginForm input:focus {
-    border: 1px solid #ff656c;
+    border: 2px solid #b30000;
 }
 
 #loginButt{

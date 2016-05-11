@@ -1,3 +1,5 @@
 body {
-    background-image: scr="assets/img/Homepage.JPEG";
+    background-image: url("assets/img/Homepage.jpg");
+    background-size: cover;
+    
 }

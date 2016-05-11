@@ -76,16 +76,6 @@ h1{
     font-size: 300%;
 }
 
-/*
-#loginForm {
-    width: 320px;
-    padding: 20px;
-    background: #fff;
-    margin: 0 auto;
-}
-*/
-
-
 #loginForm input {
     width: 250px;
     height: 42px;
@@ -148,5 +138,3 @@ h1{
 	top:1px;
 }
 
-    
-}

@@ -1,5 +1,72 @@
 body {
     background-image: url("assets/img/Homepage.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+
+
+}
+
+#container{
+    overflow: hidden;
     
 }
+
+#header{
+    text-align: left;
+    height: 100px;
+    background: #ffffff;
+    opacity: 0.8;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+    z-index: -1;
+    position: fixed;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+a{
+    float: right;
+    color: black;
+    margin-left: 15px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:hover{
+    color: #cccccc;
+}
+
+li{
+    margin-bottom: 40px;
+    float: left;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    margin-top: -20px;
+}
+
+#nav{
+    float: right;
+    margin-right: 30px;
+    margin-top: -50px;
+}
+
+#logo{
+    margin-left: 40px;
+    top: 30px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 300%;
+}
+

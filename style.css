@@ -1,6 +1,7 @@
 body {
     background-image: url("assets/img/Homepage.jpg");
     background-size: cover;
+<<<<<<< HEAD
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -70,3 +71,5 @@ h1{
     font-size: 300%;
 }
 
+=======
+>>>>>>> 1b9d9fc8b8ba7bc42b9e04e8b62687177e62414f

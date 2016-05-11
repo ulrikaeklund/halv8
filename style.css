@@ -1,12 +1,10 @@
 body {
     background-image: url("assets/img/Homepage.jpg");
     background-size: cover;
-<<<<<<< HEAD
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-
-
+    
 }
 
 #container{
@@ -16,7 +14,7 @@ body {
 
 #header{
     text-align: left;
-    height: 100px;
+    height: 85px;
     background: #ffffff;
     opacity: 0.8;
     width: 100%;
@@ -26,6 +24,13 @@ body {
     position: fixed;
     font-family: sans-serif;
     text-decoration: none;
+}
+
+#logga{
+    margin-left: -35px;
+    margin-top: 7px;
+    width: 75px;
+    height: auto;
 }
 
 a{
@@ -71,5 +76,55 @@ h1{
     font-size: 300%;
 }
 
-=======
->>>>>>> 1b9d9fc8b8ba7bc42b9e04e8b62687177e62414f
+#loginForm {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+
+#loginForm input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+#loginForm input#username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input#username:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input:active, #loginForm input:focus {
+    border: 1px solid #ff656c;
+}
+
+#loginButt{
+    margin: 10px;
+    padding: 10px;
+    
+}

@@ -18,7 +18,6 @@ body {
     width: 100%;
     margin-left: -8px;
     margin-top: -8px;
-    z-index: -1;
     position: fixed;
     font-family: sans-serif;
     text-decoration: none;
@@ -342,4 +341,9 @@ h2 {
   line-height: 26px;
   margin-bottom: 20px;
   color: #666;
+}
+
+#profilbild{
+    height: 150px; 
+    width: 150;
 }

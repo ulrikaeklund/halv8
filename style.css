@@ -85,6 +85,10 @@ ul{
     top: 30px;
 }
 
+/* - - - - - - - - - -        - - - - - - - - - - 
+   - - - - - - - - - - Homepage - - - - - - - - - - 
+   - - - - - - - - - -        - - - - - - - - - - */
+
 h1{
     font-family: sans-serif;
     font-weight: bold;
@@ -100,6 +104,40 @@ h2 {
     font-size: 150%;
     margin-left: 200px;
 }
+
+#rutaOm{
+    width: 250px;
+    padding: 0 20px 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0.8;
+    margin-left: 135px;
+    float: left;
+}
+
+#omoss{
+    font-family: serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+}
+
+#oss {
+    font-family: sans-serif;
+    font-style: italic;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: -10px;
+}
+
+/* - - - - - - - - - -        - - - - - - - - - - 
+   - - - - - - - - - - Logga in - - - - - - - - - - 
+   - - - - - - - - - -        - - - - - - - - - - */
 
 #loginForm input {
     width: 250px;
@@ -157,20 +195,18 @@ h2 {
 	color: #b30000;
 }
 
-#omoss{
-    width: 300px;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-top: -20px;
-    margin-left: 130px;
-    font-family: cursive;
-    font-size: 22px;
-    font-weight: 800;
-    float: left;
-    color: white;
-    
-    
+
+/* - - - - - - - - - -        - - - - - - - - - - 
+   - - - - - - - - - - Regform - - - - - - - - - - 
+   - - - - - - - - - -        - - - - - - - - - - */
+
+#regi {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    margin-left: 10px;
 }
 
 #regform {

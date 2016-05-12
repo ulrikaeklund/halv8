@@ -96,8 +96,9 @@ h1{
 h2 {
     font-family: sans-serif;
     font-weight: bold;
-    color: black;
-    font-size: 120%;
+    color: white;
+    font-size: 150%;
+    margin-left: 200px;
 }
 
 #loginForm input {
@@ -156,18 +157,18 @@ h2 {
 	color: #b30000;
 }
 
-p{
-    width: 260px;
+#omoss{
+    width: 300px;
     padding: 20px;
-    background: #fff;
     border-radius: 5px;
     margin: 0 auto;
-    opacity: 0.8;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-left: 130px;
     font-family: cursive;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 800;
     float: left;
+    color: white;
     
     
 }

@@ -149,6 +149,21 @@ h1{
 	color: #b30000;
 }
 
+p{
+    width: 260px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: 0.8;
+    margin-top: -15px;
+    margin-left: 130px;
+    font-family: cursive;
+    font-size: 18px;
+    float: left;
+    
+    
+}
 
 #regform {
     width: 320px;

@@ -18,15 +18,32 @@
                     <button type="submit" id="loginButt" name="loginButt">Logga in</button>
                 </form>
                 </div>
-            </div>
-            <div id="content">
-                <form method="post" id="regform" name="regform" action="">   
-                    <input type="text" id="regusername" name="username" placeholder="Användarnamn">             
-                    <input type="text" id="regpassword" name="password" placeholder="Lösenord">                    
-                    <input type="text" id="epost" name="epost" placeholder="E-mail">
-                    <input type="text" id="kommun" name="kommun" placeholder="Kommun">
-                    <button type="submit" id="regbutt" name="regbutt">Skapa konto</button>
-                </form>
+                <div id="content">
+                    <form method="post" id="regform" name="regform" action="">
+                        <h1>Registrera dig här</h1>
+                        <input type="text" id="regusername" name="username" placeholder="Användarnamn">             
+                        <input type="text" id="regpassword" name="password" placeholder="Lösenord">                    
+                        <input type="text" id="epost" name="epost" placeholder="E-mail">
+                        <select id="cities">
+                            <option selected="true" style="display:none;">Välj stad</option>
+                            <option value="Borås">Borås</option>
+                            <option value="Eskilstuna">Eskilstuna</option>
+                            <option value="Gävle">Gävle</option>
+                            <option value="Göteborg">Göteborg</option>
+                            <option value="Helsingborg">Helsingborg</option>
+                            <option value="Jönköping">Jönköping</option>
+                            <option value="Linköping">Linköping</option>
+                            <option value="Lund">Lund</option>
+                            <option value="Malmö">Malmö</option>
+                            <option value="Norrköping">Norrköping</option>
+                            <option value="Umeå">Umeå</option>
+                            <option value="Uppsala">Uppsala</option>
+                            <option value="Västerås">Västerås</option>
+                            <option value="Örebro">Örebro</option>
+                        </select>
+                        <button type="submit" id="regbutt" name="regbutt">Skapa konto</button>
+                    </form>
+                </div>
             </div>
         </div>
     </body>

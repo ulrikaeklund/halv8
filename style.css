@@ -89,7 +89,8 @@ h1{
     font-family: sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 300%;
+    font-size: 150%;
+    text-align: center;
 }
 
 #loginForm input {
@@ -141,19 +142,24 @@ h1{
 	font-family:sans-serif;
 	font-size:14px;
 	text-decoration:none;
+   
 }
 
 #loginButt:hover {
 	color: #b30000;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7620cb20f2b28a5d77b1a1dd8bc628f68f1dbb6f
 #regform {
     width: 320px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    border-top: 5px solid #ff656c;
     margin: 0 auto;
+    opacity: 0.8;
 }
 
 #regform input {
@@ -161,12 +167,13 @@ h1{
     height: 42px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     margin-bottom: 20px;
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: sans-serif;
     padding: 0 20px 0 50px;
     outline: none;
+    
 }
 
 #regform input#regusername {
@@ -186,32 +193,61 @@ h1{
     background-size: 16px 80px;
 }
 #regform input#epost {
-    background: #fff url('http://www.humanitarianresponse.info/sites/www.humanitarianresponse.info/files/email-icon.png')20px top no-repeat;
+    background: #fff url('https://cdn4.iconfinder.com/data/icons/social-icons-6/40/mail-512.png')20px no-repeat;
     background-size: 16px 16px;
 }
-    #regform input#epost:focus {
-    background: #fff 20px url('http://www.humanitarianresponse.info/sites/www.humanitarianresponse.info/files/email-icon.png')20px top no-repeat;
+#regform input#epost:focus {
+    background: #fff 20px url('https://cdn4.iconfinder.com/data/icons/social-icons-6/40/mail-512.png')20px  no-repeat;
     background-size: 16px 16px;
-  }  
-}
-#regform input#kommun {
-    background: #fff url('http://www.yofaco.or.ug/wp-content/uploads/2016/01/house-grey-md.png')20px top no-repeat;
-    background-size: 14px 16px;
-}
-#regform input#kommun:focus {
-    background: #fff url('http://www.yofaco.or.ug/wp-content/uploads/2016/01/house-grey-md.png')20px top no-repeat;
-    background-size: 14px 16px;
-  }  
+    
+}  
+
 
 #regform input:active, #regform input:focus {
-    border: 1px solid #ff656c;
+    border: 1px solid #b30000;
 }
 #regform {
-    float : right;    
+    float : right; 
+    margin-top: 140px;
+    margin-right: 30px;
 }
 
 #regbutt{
-    margin: 10px;
+    width: 250px;
+    margin: 20px;
     padding: 10px;
+    height: 50px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:22px;
+	text-decoration:none;
+    margin-left: 40px;
+    font-weight: 400;
+    
 }
+<<<<<<< HEAD
+=======
 
+#regbutt:hover{
+    color: #b30000;
+}
+>>>>>>> 7620cb20f2b28a5d77b1a1dd8bc628f68f1dbb6f
+
+#cities{
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid #000000;
+    border-radius: 5;
+    height: 42px;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}

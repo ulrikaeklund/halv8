@@ -117,14 +117,6 @@ h2 {
     float: left;
 }
 
-#omoss{
-    font-family: serif;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 27px;
-    color: black;
-}
-
 #oss {
     font-family: sans-serif;
     font-style: italic;
@@ -134,6 +126,17 @@ h2 {
     margin-left: 0px;
     margin-bottom: -10px;
 }
+
+#omoss{
+    font-family: serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    text-align: center;
+}
+
+
 
 /* - - - - - - - - - -        - - - - - - - - - - 
    - - - - - - - - - - Logga in - - - - - - - - - - 
@@ -151,13 +154,13 @@ h2 {
     outline: none;
 }
 
-#loginForm input#username {
+#loginForm input#email {
     margin-right: 10px;
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
-#loginForm input#username:focus {
+#loginForm input#email:focus {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
@@ -217,7 +220,7 @@ h2 {
     margin: 0 auto;
     opacity: 0.8;
     float : right; 
-    margin-top: 80px;
+    margin-top: 110px;
     margin-right: 40px;
 }
 
@@ -235,31 +238,26 @@ h2 {
     
 }
 
-#regform input#regusername {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-#regform input#regusername:focus {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-#regform input#regpassword {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-#regform input#regpassword:focus {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
 #regform input#epost {
-    background: #fff url('https://cdn4.iconfinder.com/data/icons/social-icons-6/40/mail-512.png')20px no-repeat;
-    background-size: 16px 16px;
+    margin-right: 10px;
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
 }
-#regform input#epost:focus {
-    background: #fff 20px url('https://cdn4.iconfinder.com/data/icons/social-icons-6/40/mail-512.png')20px  no-repeat;
-    background-size: 16px 16px;
-}  
 
+#regform input#epost:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+#regform input#regpassword{
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+#regform input#regpassword:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
 
 #regform input:active, #regform input:focus {
     border: 1px solid #b30000;

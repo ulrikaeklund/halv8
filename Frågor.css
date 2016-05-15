@@ -1,0 +1,121 @@
+<style>
+
+.para {
+width: 300px;
+    margin: 10px;
+    padding: 10px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;}
+}
+
+a.headings:link {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+
+a.headings:visited {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+
+a.headings:hover {
+width: 300px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+
+a.headings:active {
+width: 300px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+
+a.headings {
+  width: 300px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+
+div.open {
+   width: 300px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+
+}
+
+div.stuff {
+   width: 300px;
+    padding: 10px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+	text-decoration:none;
+    float: left;
+}
+}
+</style>

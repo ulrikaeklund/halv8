@@ -1,0 +1,249 @@
+body {
+    background-image: url("../img/Homepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+    background-color: gray;  
+}
+
+#logga{
+    margin-left: 7px;
+    margin-top: 7px;
+    width: 75px;
+}
+
+header{
+    text-align: left;
+    height: 85px;
+    background: #ffffff;
+    opacity: 0.8;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px;
+	background-color:black;
+    color: white;
+	border-radius:5px;
+	border:2px solid #000000;
+	cursor:pointer;
+	font-family:sans-serif;
+	font-size:14px;
+    font-weight: 400;
+	text-decoration:none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    color: #b30000;
+}
+
+nav li{
+    position: relative;
+    display: inline;
+
+}
+
+nav ul a{
+    float: right;
+    margin-left: 15px;
+    list-style: none;
+    font-size: 120%;
+    padding: 10px;
+    width: 90px;
+}
+
+/* - - - - - Navigation - - - - -
+   - - - - - Logged in  - - - - - */
+#loginForm {
+    float: right;
+    margin-right: 30px;
+    margin-top: -65px;
+    position: relative;
+}
+
+#loginForm input {
+    width: 250px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+#loginForm input[name=email], #regForm input[name=email] {
+    margin-right: 10px;
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input[name=email]:focus, #regForm input[name=email]:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input[name=password], #regForm input[name=password], #regForm input[name=password_again] {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+#loginForm input[name=password]:focus, #regForm input[name=password]:focus, #regForm input[name=password_again]:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+/* 
+   - - - - - Register  - - - - - */
+#regForm {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: 0.8;
+    float : right; 
+    margin-top: 110px;
+    margin-right: 40px;
+}
+
+#regForm input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0 20px 0 50px;
+    outline: none;
+    
+}
+
+#regForm select {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid #000000;
+    border-radius: 5;
+    height: 42px;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+#regForm h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#regForm .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+
+/* 
+   - - - - - Om oss - - - - - */
+#omOss {
+    width: 250px;
+    padding: 0 20px 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 100px;
+    opacity: 0.8;
+    margin-left: 135px;
+    float: left;
+}
+
+#omOss p {
+    font-family: serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    text-align: center;
+}
+
+#omOss h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+}
+
+/* 
+   - - - - - Profil - - - - - */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,300);
+
+#profilContent {
+  width: 400px;
+  margin: 170px auto 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+
+.avatar {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+
+    position: relative;
+    margin: auto;
+    top: -62px;
+    box-shadow: 0 0 0 13px #f0f0f0;
+    -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+    -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+
+#profilbild{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 150px;
+    height: auto;
+}
+
+#profileContent h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  margin-bottom: 25px
+}
+
+#profileContent p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #666;
+}

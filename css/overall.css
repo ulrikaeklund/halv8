@@ -53,8 +53,6 @@ nav li{
     float: left;
     margin-left: 15px;
     margin-top: 22px;
-    
-
 }
 
 nav ul a{
@@ -269,24 +267,21 @@ nav ul a{
     box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    border-top: 5px solid #404040;
     user-select: none;
 }
 
 #searchForm h2 {
   margin: 0;
-  padding: 20px;
-  font-size: 150%;
+  padding-top: 20px;
+  font-size: 120%;
   text-align: center;
 }
 
 #searchForm .btn {
     width: 250px;
     height: 50px;
-    font-size: 22px;
-    margin-left: 135px; 
-    
-    
+    font-size: 20px;
+    margin-left: 135px;  
 }
 
 .items {
@@ -296,53 +291,53 @@ nav ul a{
 }
 
 h3 {
-  position: relative;
-  margin: 0;
-  padding: 10px 0;
-  font-size: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 80%;
 }
 
 h3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: -20px;
-  width: 5px;
-  background-color: #404040;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -20px;
+    width: 5px;
+    background-color: #404040;
 }
 
 h3::after {
-  display: block;
-  float: right;
-  font-weight: normal;
+    display: block;
+    float: right;
+    font-weight: normal;
 }
 
 .done {
-  order: 1;
+    order: 1;
 }
 
 .undone {
-  order: 3;
+    order: 3;
 }
 
 input[type=checkbox] {
-  display: block;
-  height: 53px;
-  margin: 0 0 -53px -9999px;
-  order: 4;
-  outline: none;
+    display: block;
+    height: 53px;
+    margin: 0 0 -53px -9999px;
+    order: 4;
+    outline: none;
 }
 
 label {
-  display: block;
-  position: relative;
-  padding: 15px 0 15px 45px;
-  border-top: 1px dashed #fff;
-  order: 4;
-  cursor: pointer;
-  animation: undone .5s;
+    display: block;
+    position: relative;
+    padding: 15px 0 15px 45px;
+    border-top: 1px dashed #fff;
+    order: 4;
+    cursor: pointer;
+    animation: undone .5s;
 }
 
 label::before {
@@ -351,15 +346,15 @@ label::before {
     position: absolute;
     top: 11px;
     left: 10px;
-    font: 120% 'FontAwesome';
+    font: 100% 'FontAwesome';
 }
 
 label:hover, input:focus + label {
-  color: #b30000
+    color: #b30000
 }
 
 input[type=checkbox]:checked + label {
-  order: 2;
+    order: 2;
 }
 
 input[type=checkbox]:checked + label::before {
@@ -370,4 +365,69 @@ input[type=checkbox]:checked + label::before {
 	color: #b30000;
     font-size: 25px;
 	left: 6px;
+}
+
+/* 
+   - - - - - Redigera profil  - - - - - */
+#editForm {
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: 0.8; 
+    margin-top: 110px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+}
+
+#editProfile h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+}
+
+div#editProfile input[type="email"],
+div#editProfile input[type="text"],
+div#editProfile input[type="password"], div#editProfile select, div#editProfile textarea {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+div#editProfile select {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid #000000;
+    border-radius: 5;
+    height: 42px;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+div#editProfile textarea {
+    height: 100px;
+    resize: vertical;
+    padding: 4%;
+}
+
+#registerBtn .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
 }

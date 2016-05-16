@@ -346,11 +346,12 @@ label {
 }
 
 label::before {
-  display: block;
-  position: absolute;
-  top: 11px;
-  left: 10px;
-  font: 120% 'FontAwesome';
+    content: '\f10c'; 
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font: 120% 'FontAwesome';
 }
 
 label:hover, input:focus + label {

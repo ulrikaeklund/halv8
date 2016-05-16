@@ -8,9 +8,11 @@ body {
 }
 
 #logga{
-    margin-left: 7px;
-    margin-top: 7px;
-    width: 75px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    height: 85px;
+    padding-right: 490px;
 }
 
 header{
@@ -47,14 +49,15 @@ header{
 
 nav li{
     position: relative;
-    display: inline;
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    margin-top: 22px;
+    
 
 }
 
 nav ul a{
-    float: right;
-    margin-left: 15px;
-    list-style: none;
     font-size: 120%;
     padding: 10px;
     width: 90px;

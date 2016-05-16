@@ -4,5 +4,5 @@ session_start();
 
 $errors = array();
 
-function logged_in() {return true;}
+function logged_in() {return false;}
 ?>

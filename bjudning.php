@@ -7,8 +7,6 @@ include 'includes/overall/header.php';
 <div class="searchBjud">
     <form method="post" id="searchForm" action="">
         <h2>Sök ny bjudning</h2>
-        <input type="text" name="name" placeholder="Namn">
-        <input type="text" name="city" placeholder="Stad">
         <div class="items">
             <input id="monday" type="checkbox">
             <label for="monday">Måndag</label>

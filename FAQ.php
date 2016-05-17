@@ -1,4 +1,5 @@
-<html>
+<?php
+include 'core/init.php';
 <head>
 <title>Click to see the answer</title>
 <style>
@@ -32,9 +33,7 @@ a.headings:link {
 	text-decoration:none;
    float:left;
     margin-left: 40px;
-
 }
-
 a.headings:visited {
     width: 300px;
 margin: 10px;
@@ -50,8 +49,6 @@ margin: 10px;
     float: left;
     margin-left: 40px;
 }
-
-
 a.headings:hover {
 width: 300px;
 	background-color:black;
@@ -80,7 +77,6 @@ width: 300px;
     margin-left: 40px;
 }
 
-
 a.headings {
   width: 300px;
 	background-color:black;
@@ -94,8 +90,6 @@ a.headings {
     float:left;
     margin-left: 40px;
 }
-
-
 div.open {
     width: 300px;
     color: white;
@@ -106,7 +100,6 @@ div.open {
     float:left;
     margin-left: 40px;
 }
-
 div.stuff {
    width: 300px;
     padding: 10px;
@@ -121,7 +114,6 @@ div.stuff {
     float:left;
     margin-left: 40px;
 }
-
 </style>
 <script type="text/javascript">
 var subs_array = new Array("sub1","sub2","sub3");
@@ -168,4 +160,4 @@ if (document.getElementById(the_sub).style.display==""){
     
  </div> 
  </div>
- </html>
+ <?php include 'includes/overall/footer.php'?>

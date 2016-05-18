@@ -31,14 +31,12 @@ include 'includes/overall/header.php';
                     <option value="Västerås">Västerås</option>
                     <option value="Örebro">Örebro</option>
                 </select>
-                <textarea placeholder="Berätta om dig själv"></textarea>
-                <select>
-                    <option selected="true" style="display:none;" value="Kön">Kön</option>
-                    <option value="">Man</option>
-                    <option value="">Kvinna</option>
-                </select>
+                <textarea id="#aboutText" placeholder="Berätta om dig själv"></textarea>
+                <input type="text" placeholder="Skriv dina allergier här">
                 <input type="text" placeholder="Facebookprofil URL">
                 <input type="submit" class="btn" name="registerBtn" value="Spara din profil">
             </div>
         </form>
     </div>
+
+

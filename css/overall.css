@@ -254,10 +254,13 @@ nav ul a{
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
 
 .searchBjud {
-    width: 500px;
+    width: 450px;
+    height: 500px;
+    overflow: scroll;
     color: black;
     font: 500 1.2em/1.2 'Roboto', sans-serif;
     margin: 0 auto;
+    margin-top: 120px;
     background-color: #fff;
     padding: 0 20px 20px 20px;
     opacity: 0.8;
@@ -369,8 +372,10 @@ input[type=checkbox]:checked + label::before {
 
 /* 
    - - - - - Redigera profil  - - - - - */
-#editForm {
-    width: 400px;
+#editProfile{
+    width: 430px;
+    height: 500px;
+    overflow: scroll;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
@@ -380,6 +385,7 @@ input[type=checkbox]:checked + label::before {
     box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    
 }
 
 #editProfile h2 {
@@ -421,8 +427,8 @@ div#editProfile select {
 }
 
 div#editProfile textarea {
-    height: 100px;
-    resize: vertical;
+    height: 150px;
+    resize: none;
     padding: 4%;
 }
 

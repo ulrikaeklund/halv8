@@ -2,6 +2,10 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 if (logged_in()) {
+//<<<<<<< Updated upstream
+//=======
+//    echo 'Hello';
+//>>>>>>> Stashed changes
     header("Location: bjudning.php"); 
     exit();
 } else {

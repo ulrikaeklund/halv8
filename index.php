@@ -2,6 +2,10 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 include 'login.php';
+if (logged_in()) {
+    header("Location: index.php"); 
+    exit();
+}
 ?>
 <div id="omOss">
     <h2>Om oss </h2>

@@ -1,10 +1,11 @@
 <?php
 include 'core/init.php';
 include 'includes/overall/header.php';
-include 'login.php';
 if (logged_in()) {
-    header("Location: index.php"); 
+    header("Location: bjudning.php"); 
     exit();
+} else {
+    include 'login.php';
 }
 ?>
 <div id="omOss">

@@ -436,4 +436,302 @@ div#editProfile textarea {
     width: 250px;
     height: 50px;
     font-size: 22px;
+
+    }
+
+    /*  - - - - - FAQ - - - - - */
+
+.faq-section1{
+    margin: 70px 0;
+        position: relative;
+}
+
+.faq-section1 p{
+    display: none;
+    
+}   
+.faq-section1 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;          
+}                  
+.faq-section1 input[type=checkbox]:checked~p{
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px;  
+}
+
+.faq-section1 label{
+    font-size: 1.2em;
+    background: #d3d3d3;
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-left: 3px solid #999;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out; 
+    margin-left: 20px;  
+   
+}
+
+.faq-section1 label::selection{
+    background: none;
+}
+
+.faq-section1 label:hover{
+    background: #f5f5f5;
+}
+
+.faq-section1 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+.faq-section1 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit; 
+}
+.faq-section1 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;    
+}
+.faq-section2{
+    margin: 70px 0;
+    position: relative;
+}
+
+.faq-section2 p{
+    display: none;
+
+}   
+.faq-section2 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;         
+}
+                    
+.faq-section2 input[type=checkbox]:checked~p{
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px;   
+}
+
+.faq-section2 label{
+    font-size: 1.2em;
+    background: #d3d3d3;
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-left: 3px solid #999;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out; 
+    margin-left: 20px;  
+   
+}
+
+.faq-section2 label::selection{
+    background: none;
+}
+
+.faq-section2 label:hover{
+    background: #f5f5f5;
+}
+
+.faq-section2 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+.faq-section2 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit; 
+}
+.faq-section2 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;    
+}
+
+.faq-section3{
+    margin: 70px 0;
+    position: relative;
+}
+
+
+.faq-section3 p{
+    display: none;
+    font-family: sans-serif;
+     font-size: 1.2em;   
+     font-weight: bold;
+}   
+
+.faq-section3 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;         
+}
+                    
+.faq-section3 input[type=checkbox]:checked~p{
+    display: block;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 1.2em;   
+    font-weight: bold;  
+}
+
+.faq-section3 label{
+    font-size: 1.2em;
+    background: #d3d3d3;
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-left: 3px solid #999;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out; 
+    margin-left: 20px;  
+}
+.faq-section3 label::selection{
+    background: none;
+}
+
+.faq-section3 label:hover{
+    background: #f5f5f5;
+}
+
+.faq-section3 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+.faq-section3 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit; 
+}
+
+.faq-section3 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;    
+}
+.faq-section3{
+    margin: 70px 0;
+    position: relative;
+}
+
+
+.faq-section4 p{
+  display: none;
+
+}   
+
+.faq-section4 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;         
+}
+                    
+.faq-section4 input[type=checkbox]:checked~p{
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2em;   
+    font-weight: bold;
+    margin-left: 20px;  
+}
+
+.faq-section4 label{
+    font-size: 1.2em;
+    background: #d3d3d3;
+    display: block;
+    position: relative;
+    height: 20px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-left: 3px solid #999;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    transition: all .15s ease-out; 
+    margin-left: 20px; 
+}
+
+.faq-section4 label::selection{
+    background: none;
+}
+
+.faq-section4 label:hover{
+    background: #f5f5f5;
+}
+
+.faq-section4 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+.faq-section4 label::before{
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit; 
+}
+
+.faq-section4 input[type=checkbox]:checked~label::before{
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;    
+}
+#rubfr
+{
+margin-top: 110px;
+margin-left: 20px;
+font-family: sans-serif;
+
+
+
+
 }

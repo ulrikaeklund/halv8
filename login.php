@@ -15,13 +15,9 @@ if (empty($_POST['loginBtn']) === false) {
             $errors[] = 'That username/password combination is incorrect.'; }
         else {
             $_SESSION['user_id'] = $login;
-            header('Location: bjudning.php');
+            echo '<script type="text/javascript">
+                window.location = "bjudning.php"
+            </script>';
             exit();
             }
     }   } ?>
-
-<form method="post" id="loginForm" action=""> 
-    <input type="text" name="email" placeholder="E-mail">
-    <input type="password" name="password" placeholder="Lösenord">
-    <input type="submit" class="btn" name="loginBtn" value="Logga in">
-</form>

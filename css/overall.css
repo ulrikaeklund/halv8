@@ -61,12 +61,38 @@ nav ul a{
     width: 90px;
 }
 
+.formError {
+    padding: 8px;
+    margin-top: -12px;
+    margin-bottom: 2px;
+    color: red;
+}
+
+ul li {
+    padding: 0;
+    list-style: none;
+}
+
+form input[type=submit] {
+    text-align: center;
+    font-size: 22px;
+}
+
+h5 {
+    color: green;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: -7px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
 /* - - - - - Navigation - - - - -
    - - - - - Logged in  - - - - - */
 #loginForm {
-    float: right;
-    margin-right: 30px;
-    position: relative;
+    margin-left: 35%;
+    margin-top: 15px;
+    position: absolute;
 }
 
 #loginForm input {
@@ -101,66 +127,6 @@ nav ul a{
     background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
-
-/* 
-   - - - - - Register  - - - - - */
-#regForm {
-    width: 320px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 0 auto;
-    opacity: 0.8;
-    float : right; 
-    margin-top: 110px;
-    margin-right: 40px;
-}
-
-#regForm input {
-    width: 100%;
-    height: 42px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-family: sans-serif;
-    padding: 0 20px 0 50px;
-    outline: none;
-    
-}
-
-#regForm select {
-    background: transparent;
-    width: 100%;
-    padding: 5px;
-    font-size: 14px;
-    line-height: 1;
-    border: 1px solid #000000;
-    border-radius: 5;
-    height: 42px;
-    padding: 0 20px 0 50px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    outline: none;
-}
-
-#regForm h2 {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 150%;
-    text-align: center;
-    margin-left: 10px;
-}
-
-#regForm .btn {
-    width: 250px;
-    height: 50px;
-    font-size: 22px;
-    margin-left: 40px;
-}
-
 
 /* 
    - - - - - Om oss - - - - - */
@@ -733,5 +699,64 @@ font-family: sans-serif;
 
 
 
+
+}
+
+
+
+
+
+
+
+
+
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Register  - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+ 
+#regForm {
+    width: 320px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0.8;
+    float : right; 
+    margin-top: 110px;
+    margin-right: 40px;
+}
+
+#regform ul li {
+    display: block;
+}
+
+#regForm input, #regForm select {
+    width: 100%;
+    margin-left: -20px;
+    height: 42px;    
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0 20px 0 50px;
+    outline: none;
+    
+}
+
+
+#regForm h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#regForm .btn {
+
+    height: 50px;
+    font-size: 22px;
 
 }

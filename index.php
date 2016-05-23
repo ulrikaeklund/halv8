@@ -2,11 +2,9 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 if (logged_in()) {
-//<<<<<<< Updated upstream
-//=======
-//    echo 'Hello';
-//>>>>>>> Stashed changes
-    header("Location: bjudning.php"); 
+    echo '<script type="text/javascript">
+                window.location = "bjudning.php"
+            </script>'; 
     exit();
 } else {
     include 'login.php';

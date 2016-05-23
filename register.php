@@ -3,23 +3,23 @@ if (empty($_POST['regBtn']) === false) {
     $required_fields = array('email','password','password_again');
     foreach($_POST as $key=>$value) {
         if ((empty($value) && in_array($key, $required_fields) === true) || $_POST['city'] == "Välj stad") {
-            $errors[] = 'Fields marked with an asterisk are required';
+            $errors['fields'] = 'Vänligen fyll i alla fält.';
             break 1;
         }
     }
     
     if (empty($errors) === true) {
         if (user_exists($_POST['email']) === true) {
-            $errors[] = 'Sorry, the email \'' . $_POST['email'] . '\' is already taken.'; 
+            $errors['email'] = 'E-posten \'' . $_POST['email'] . '\' är redan registrerad.'; 
         }
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Invalid email';
+            $errors['email2'] = 'Vänligen ange en korrekt e-post.';
         }
         if (strlen($_POST['password']) < 6) {
-            $errors[] = 'Your password must be at least 6 characters';
+            $errors['pass1'] = 'Ditt lösenord måste vara minst 6 tecken långt.';
         }
         if ($_POST['password'] !== $_POST['password_again']) {
-            $errors[] = 'Your passwords do not match';
+            $errors['pass2'] = 'Dina lösenord matchade inte.';
         }
     }
 }
@@ -31,18 +31,63 @@ if (empty($_POST['regBtn']) === false && empty($errors) === true) {
             'city'          => $_POST['city'],
     );
     register_user($register_data);
-    header('Location: register.php?success');
-    echo 'Success!';
-    exit(); }    
+    $successMsg = '<h5> ✔ Registrering genomförd!</h5>';
+} ?>
 
-else if (empty($errors) === false) {
-        echo output_errors($errors);
-}
-?>
-
-<form method="post" id="regForm" name="regForm" action="">
+<form method="post" name="regForm" action="" id="regForm">
     <h2>Registrera dig här</h2>
-    <input type="text" name="email" placeholder="E-mail">           
+    <?php if($successMsg) {
+        echo $successMsg;
+    }
+          form_errors($errors['fields']); ?>
+    <ul>
+        <li>
+            <input type="text" name="email" placeholder="E-post"> 
+            <?php form_errors($errors['email']);
+                  form_errors($errors['email2']); ?>
+        </li>
+        <li>
+            <input type="password" name="password" placeholder="Lösenord">
+            <?php form_errors($errors['pass1']); ?>
+        </li>
+        <li>
+            <input type="password" name="password_again" placeholder="Upprepa lösenord">
+            <?php form_errors($errors['pass2']); ?>
+        </li>
+        <li>
+            <select name="city">
+                <option selected="true" style="display:none;" value="Välj stad">Välj stad</option>
+                <option value="Borås">Borås</option>
+                <option value="Eskilstuna">Eskilstuna</option>
+                <option value="Gävle">Gävle</option>
+                <option value="Göteborg">Göteborg</option>
+                <option value="Helsingborg">Helsingborg</option>
+                <option value="Jönköping">Jönköping</option>
+                <option value="Linköping">Linköping</option>
+                <option value="Lund">Lund</option>
+                <option value="Malmö">Malmö</option>
+                <option value="Norrköping">Norrköping</option>
+                <option value="Stockholm">Stockholm</option>
+                <option value="Umeå">Umeå</option>
+                <option value="Uppsala">Uppsala</option>
+                <option value="Västerås">Västerås</option>
+                <option value="Örebro">Örebro</option>
+            </select>
+        </li>
+        <li>
+            <input type="submit" class="btn" name="regBtn" value="Skapa konto">
+        </li>
+    </ul>
+</form>
+
+
+
+
+
+<!--<form method="post" id="regForm" name="regForm" action="">
+    <h2>Registrera dig här</h2>
+    <input type="text" name="email" placeholder="E-mail">   
+        
     <input type="password" name="password" placeholder="Lösenord">
     <input type="password" name="password_again" placeholder="Upprepa lösenord">
     <select name="city">
@@ -64,5 +109,5 @@ else if (empty($errors) === false) {
         <option value="Örebro">Örebro</option>
     </select>
     <input type="submit" class="btn" name="regBtn" value="Skapa konto">
-</form>
+</form> -->
 

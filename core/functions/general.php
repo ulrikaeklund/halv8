@@ -10,4 +10,10 @@ function sanitize($data) {
 function output_errors($errors) {
     return '<ul><li>' . implode('</li><li>', $errors) . '</li></ul>';
 }
+
+function form_errors($errors) {
+    if($errors) {
+        echo '<p class="formError">' . $errors . '</p>'; 
+    }
+}
 ?>

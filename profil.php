@@ -6,6 +6,7 @@ include 'includes/overall/header.php';
 
 <div id="profilContent">
     <div class="avatar">
+        <img src="img/profile/defaultprofile.png" alt="Default profilbild">
         <?php 
         if(isset ($_FILES['profile']) === true){
             if(empty($_FILES['profile']['name']) === true){

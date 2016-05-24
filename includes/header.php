@@ -1,5 +1,5 @@
 <header>
-    <img id="logga" src="../img/logga8.png">
+    <a href="index.php"><img id="logga" src="img/logga8.png" alt="Halv 8 hos mig"></a>
     <nav>
         <?php if(logged_in()) {
         echo    '<ul>

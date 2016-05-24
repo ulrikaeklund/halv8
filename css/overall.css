@@ -154,6 +154,7 @@ nav form input[name=email], nav form input[name=password] {
     border: 1px solid #000000;
     margin-bottom: 20px;
     padding: 0 20px 0 50px;
+    font-size: 16px;
 }
 
 
@@ -378,6 +379,15 @@ h3::after {
 	color: #b30000;
     font: 100% 'FontAwesome';
 	left: 6px;
+}
+
+#searchForm .btn {
+    height: 40px;
+    width: 100px;
+    margin-left: 170px;
+}
+#searchForm .btn:hover {
+    background-color: green;
 }
 
 /* - - -  - - - - - - - - - - - - - 

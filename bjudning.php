@@ -31,7 +31,7 @@ include 'includes/overall/header.php';
             <h3 class="done" aria-hidden="true">Tillgänglig</h3>
             <h3 class="undone" aria-hidden="true">Inte tillgänglig</h3>
           </div>
-        <input type="submit" class="btn" name="searchBtn" value="Sök bjudning">
+        <input type="submit" class="btn" name="searchBtn" value="SÖK &#128270;">
     </form>
     <form method="post" action="wall.php" id="wall">
         <input type="submit" class="btn" name="wallBtn" value="Vägg">

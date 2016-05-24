@@ -308,7 +308,7 @@ input[type=checkbox] {
     outline: none;
 }
 
-label {
+.items label {
     display: block;
     position: relative;
     padding: 15px 0 15px 45px;
@@ -318,7 +318,7 @@ label {
     animation: undone .5s;
 }
 
-label::before {
+.items label::before {
     content: '\f10c'; 
     display: block;
     position: absolute;
@@ -327,15 +327,15 @@ label::before {
     font: 100% 'FontAwesome';
 }
 
-label:hover, input:focus + label {
+.items label:hover, input:focus + .items label {
     color: #b30000
 }
 
-input[type=checkbox]:checked + label {
+input[type=checkbox]:checked + .items label {
     order: 2;
 }
 
-input[type=checkbox]:checked + label::before {
+input[type=checkbox]:checked + .items label::before {
     content: '\2714';
 	position: absolute;
 	top: 5px;

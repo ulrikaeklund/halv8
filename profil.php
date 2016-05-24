@@ -9,7 +9,7 @@ include 'includes/overall/header.php';
         <?php 
         if(isset ($_FILES['profile']) === true){
             if(empty($_FILES['profile']['name']) === true){
-                echo 'Vänligen välj en fil!';
+                echo 'Vänligen välj ett foto!';
             }
             else{
                 $allowed = array('jpg', 'jpeg', 'gif', 'png');

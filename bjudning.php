@@ -33,4 +33,8 @@ include 'includes/overall/header.php';
           </div>
         <input type="submit" class="btn" name="searchBtn" value="Sök bjudning">
     </form>
+    <form method="post" action="wall.php" id="wall">
+        <input type="submit" class="btn" name="wallBtn" value="Vägg">
+    </form>
 </div>
+<?php include 'includes/overall/footer.php';?>

@@ -168,7 +168,7 @@ h5 {
     width: 400px;
     margin: 200px auto 120px;
     background-color: #fff;
-    padding: 0 20px 20px;
+    padding: 20px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -230,14 +230,13 @@ h5 {
 
 .searchBjud {
     width: 450px;
-    height: 500px;
-    overflow: scroll;
+    height: 480px;
     color: black;
     font: 500 1.2em/1.2 'Roboto', sans-serif;
     margin: 0 auto;
     margin-top: 120px;
     background-color: #fff;
-    padding: 0 20px 20px 20px;
+    padding: 0 0 20px 20px;
     opacity: 0.8;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -251,21 +250,23 @@ h5 {
 #searchForm h2 {
   margin: 0;
   padding-top: 20px;
-  font-size: 120%;
+  font-size: 100%;
   text-align: center;
 }
 
 #searchForm .btn {
-    width: 250px;
-    height: 50px;
-    font-size: 20px;
-    margin-left: 135px;  
+    width: 150px;
+    height: 35px;
+    font-size: 100%;
+    margin-left: 270px;  
+    padding: 5px;
 }
 
 .items {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    font-size: 80%;
 }
 
 h3 {
@@ -300,7 +301,7 @@ h3::after {
     order: 3;
 }
 
-input[type=checkbox] {
+.items input[type=checkbox] {
     display: block;
     height: 53px;
     margin: 0 0 -53px -9999px;
@@ -311,8 +312,8 @@ input[type=checkbox] {
 .items label {
     display: block;
     position: relative;
-    padding: 15px 0 15px 45px;
-    border-top: 1px dashed #fff;
+    padding: 10px 0 10px 45px;
+    border-top: 1px dashed #ccc;
     order: 4;
     cursor: pointer;
     animation: undone .5s;
@@ -324,18 +325,18 @@ input[type=checkbox] {
     position: absolute;
     top: 11px;
     left: 10px;
-    font: 100% 'FontAwesome';
+    font: 80% 'FontAwesome';
 }
 
-.items label:hover, input:focus + .items label {
+.items label:hover, input:focus + label {
     color: #b30000
 }
 
-input[type=checkbox]:checked + .items label {
+.items input[type=checkbox]:checked + label {
     order: 2;
 }
 
-input[type=checkbox]:checked + .items label::before {
+.items input[type=checkbox]:checked + label::before {
     content: '\2714';
 	position: absolute;
 	top: 5px;

@@ -1,64 +1,49 @@
-body {
-    background-image: url("../img/Homepage.jpg");
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - General  - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+html { 
+    background: url("../img/Homepage.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;  
-    background-color: gray;  
 }
 
-#logga{
-    float: left;
-    margin-left: 20px;
-    margin-top: 0px;
-    height: 85px;
-    padding-right: 490px;
+a {
+    text-decoration:none;
 }
 
-header{
-    text-align: left;
-    height: 85px;
-    background: #ffffff;
-    opacity: 0.8;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
+h2 {
     font-family: sans-serif;
-    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+ul li {
+    list-style: none;
+}
+
+form input {
+     font-size: 14px;
+     font-family: sans-serif;
+     outline: none;
 }
 
 .btn {
-    padding: 10px;
-	background-color:black;
-    color: white;
-	border-radius:5px;
+	background-color: #e6e6e6;
+    color: black;
 	border:2px solid #000000;
 	cursor:pointer;
-	font-family:sans-serif;
-	font-size:14px;
-    font-weight: 400;
-	text-decoration:none;
+	font-size: 22px;
+    font-weight: 400;	
     text-align: center;
-    margin-top: 10px;
+    height: 40px;
+    padding: 4px;
 }
 
 .btn:hover {
-    color: #b30000;
-}
-
-nav li{
-    position: relative;
-    list-style: none;
-    float: left;
-    margin-left: 15px;
-    margin-top: 22px;
-}
-
-nav ul a{
-    font-size: 120%;
-    padding: 10px;
-    width: 90px;
+    color: white;
+    background-color: black;
 }
 
 .formError {
@@ -66,16 +51,6 @@ nav ul a{
     margin-top: -12px;
     margin-bottom: 2px;
     color: red;
-}
-
-ul li {
-    padding: 0;
-    list-style: none;
-}
-
-form input[type=submit] {
-    text-align: center;
-    font-size: 22px;
 }
 
 h5 {
@@ -87,28 +62,52 @@ h5 {
     margin-left: 10px;
 }
 
-/* - - - - - Navigation - - - - -
-   - - - - - Logged in  - - - - - */
-#loginForm {
-    margin-left: 35%;
-    margin-top: 15px;
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Header   - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+#logga {
+    float: left;
+    margin-left: 20px;
+    height: 85px;
+}
+
+header {
+    height: 85px;
+    background: white;
+    opacity: 0.85;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul {
+    top: 15px;
+    right: 30px;
     position: absolute;
 }
 
-#loginForm input {
+nav form {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+nav form input[name=email], nav form input[name=password] {
     width: 250px;
     height: 42px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 2px solid #000000;
-    font-size: 14px;
-    font-family: sans-serif;
+    border: 2px solid #000000;    
     padding: 0 20px 0 50px;
-    outline: none;
-}
+}   
 
 #loginForm input[name=email], #regForm input[name=email] {
-    margin-right: 10px;
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
@@ -128,17 +127,58 @@ h5 {
     background-size: 16px 80px;
 }
 
-/* 
-   - - - - - Om oss - - - - - */
-#omOss {
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Register  - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+ 
+#regForm {
+    width: 320px;
+    background: #e6e6e6;
+    border-radius: 5px;
+    opacity: 0.8;
+    float : right; 
+    margin-top: 130px;
+    margin-right: 20px;
+}
+
+#regform ul li {
+    display: block;
+}
+
+#regForm input[name=email], #regForm input[name=password], #regForm input[name=password_again], #regForm select {
+    width: 100%;
+    margin-left: -20px;
+    height: 42px;    
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 0 20px 0 50px;
+}
+
+
+#regForm h2 {
+    text-align: center;
+    margin-left: 10px;
+}
+
+#regForm .btn {
+    margin-left: 50px;
+}
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Om oss   - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+ 
+ #omOss {
     width: 250px;
     padding: 0 20px 0 20px;
-    background: #fff;
+    background: #e6e6e6;
     border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 100px;
+
+    margin-top: 8%;
     opacity: 0.8;
-    margin-left: 135px;
+    margin-left: 10%;
     float: left;
 }
 
@@ -152,15 +192,12 @@ h5 {
 }
 
 #omOss h2 {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 150%;
     text-align: center;
 }
 
-/* 
-   - - - - - Profil - - - - - */
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Profil   - - - - - - -
+ - - - - - - - - - - - - - - - - - */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,300);
 
@@ -180,7 +217,7 @@ h5 {
 }
 
 .avatar {
-    /*border-radius: 100px;*/
+    order-radius: 100px;
     overflow: hidden;
     height: 150px;
     width: 150px;
@@ -194,10 +231,6 @@ h5 {
 
 .avatar img{
     width: 100%;
-}
-
-#avatarPhoto{
-
 }
 
 
@@ -223,8 +256,9 @@ h5 {
   color: #666;
 }
 
-/* 
-   - - - - - Bjudning  - - - - - */
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Bjudning - - - - - - -
+ - - - - - - - - - - - - - - - - - */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
 
@@ -258,7 +292,6 @@ h5 {
 #searchForm .btn {
     width: 150px;
     height: 35px;
-    font-size: 100%;
     margin-left: 270px;  
     padding: 5px;
 }
@@ -346,8 +379,10 @@ h3::after {
 	left: 6px;
 }
 
-/* 
-   - - - - - Redigera profil  - - - - - */
+/* - - -  - - - - - - - - - - - - - 
+ - - - - Redigera profil - - - - - -
+ - - - - - - - - - - - - - - - - - */
+ 
 #editProfile{
     width: 430px;
     height: 500px;
@@ -360,8 +395,7 @@ h3::after {
     margin-top: 110px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);   
 }
 
 #editProfile h2 {
@@ -412,27 +446,30 @@ div#editProfile textarea {
     width: 250px;
     height: 50px;
     font-size: 22px;
+}
 
-    }
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - FAQ   - - - - - - -
+ - - - - - - - - - - - - - - - - - */
 
-    /*  - - - - - FAQ - - - - - */
-
-.faq-section1{
+.faq-section1 {
     margin: 70px 0;
         position: relative;
 }
 
-.faq-section1 p{
+.faq-section1 p {
     display: none;
     
 }   
-.faq-section1 input{
+
+.faq-section1 input {
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;          
-}                  
-.faq-section1 input[type=checkbox]:checked~p{
+}    
+              
+.faq-section1 input[type=checkbox]:checked~p {
     display: block;
     font-family: sans-serif;
     font-size: 1.2em;
@@ -440,7 +477,7 @@ div#editProfile textarea {
     margin-left: 20px;  
 }
 
-.faq-section1 label{
+.faq-section1 label {
     font-size: 1.2em;
     background: #d3d3d3;
     display: block;
@@ -456,21 +493,21 @@ div#editProfile textarea {
    
 }
 
-.faq-section1 label::selection{
+.faq-section1 label::selection {
     background: none;
 }
 
-.faq-section1 label:hover{
+.faq-section1 label:hover {
     background: #f5f5f5;
 }
 
-.faq-section1 input[type=checkbox]:checked~label{
+.faq-section1 input[type=checkbox]:checked~label {
     border-color: #ff7f50;          
     background: #f5deb4;
     background-image: linear-gradient(to bottom, #fff, #f5deb4);
     box-shadow: 0 0 1px rgba(0,0,0,.4);             
 }
-.faq-section1 label::before{
+.faq-section1 label::before {
     content: '';
     position: absolute;
     right: 4px;
@@ -479,29 +516,29 @@ div#editProfile textarea {
     border: 6px solid transparent;
     border-left-color: inherit; 
 }
-.faq-section1 input[type=checkbox]:checked~label::before{
+.faq-section1 input[type=checkbox]:checked~label::before {
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
-.faq-section2{
+.faq-section2 {
     margin: 70px 0;
     position: relative;
 }
 
-.faq-section2 p{
+.faq-section2 p {
     display: none;
 
 }   
-.faq-section2 input{
+.faq-section2 input {
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
-.faq-section2 input[type=checkbox]:checked~p{
+.faq-section2 input[type=checkbox]:checked~p {
     display: block;
     font-family: sans-serif;
     font-size: 1.2em;
@@ -509,7 +546,7 @@ div#editProfile textarea {
     margin-left: 20px;   
 }
 
-.faq-section2 label{
+.faq-section2 label {
     font-size: 1.2em;
     background: #d3d3d3;
     display: block;
@@ -525,22 +562,22 @@ div#editProfile textarea {
    
 }
 
-.faq-section2 label::selection{
+.faq-section2 label::selection {
     background: none;
 }
 
-.faq-section2 label:hover{
+.faq-section2 label:hover {
     background: #f5f5f5;
 }
 
-.faq-section2 input[type=checkbox]:checked~label{
+.faq-section2 input[type=checkbox]:checked~label {
     border-color: #ff7f50;          
     background: #f5deb4;
     background-image: linear-gradient(to bottom, #fff, #f5deb4);
     box-shadow: 0 0 1px rgba(0,0,0,.4);             
 }
 
-.faq-section2 label::before{
+.faq-section2 label::before {
     content: '';
     position: absolute;
     right: 4px;
@@ -549,34 +586,34 @@ div#editProfile textarea {
     border: 6px solid transparent;
     border-left-color: inherit; 
 }
-.faq-section2 input[type=checkbox]:checked~label::before{
+.faq-section2 input[type=checkbox]:checked~label::before {
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
 
-.faq-section3{
+.faq-section3 {
     margin: 70px 0;
     position: relative;
 }
 
 
-.faq-section3 p{
+.faq-section3 p {
     display: none;
     font-family: sans-serif;
      font-size: 1.2em;   
      font-weight: bold;
 }   
 
-.faq-section3 input{
+.faq-section3 input {
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
-.faq-section3 input[type=checkbox]:checked~p{
+.faq-section3 input[type=checkbox]:checked~p {
     display: block;
     margin-left: 20px;
     font-family: sans-serif;
@@ -584,7 +621,7 @@ div#editProfile textarea {
     font-weight: bold;  
 }
 
-.faq-section3 label{
+.faq-section3 label {
     font-size: 1.2em;
     background: #d3d3d3;
     display: block;
@@ -598,22 +635,22 @@ div#editProfile textarea {
     transition: all .15s ease-out; 
     margin-left: 20px;  
 }
-.faq-section3 label::selection{
+.faq-section3 label::selection {
     background: none;
 }
 
-.faq-section3 label:hover{
+.faq-section3 label:hover {
     background: #f5f5f5;
 }
 
-.faq-section3 input[type=checkbox]:checked~label{
+.faq-section3 input[type=checkbox]:checked~label {
     border-color: #ff7f50;          
     background: #f5deb4;
     background-image: linear-gradient(to bottom, #fff, #f5deb4);
     box-shadow: 0 0 1px rgba(0,0,0,.4);             
 }
 
-.faq-section3 label::before{
+.faq-section3 label::before {
     content: '';
     position: absolute;
     right: 4px;
@@ -623,31 +660,31 @@ div#editProfile textarea {
     border-left-color: inherit; 
 }
 
-.faq-section3 input[type=checkbox]:checked~label::before{
+.faq-section3 input[type=checkbox]:checked~label::before {
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
-.faq-section3{
+.faq-section3 {
     margin: 70px 0;
     position: relative;
 }
 
 
-.faq-section4 p{
+.faq-section4 p {
   display: none;
 
 }   
 
-.faq-section4 input{
+.faq-section4 input {
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
-.faq-section4 input[type=checkbox]:checked~p{
+.faq-section4 input[type=checkbox]:checked~p {
     display: block;
     font-family: sans-serif;
     font-size: 1.2em;   
@@ -655,7 +692,7 @@ div#editProfile textarea {
     margin-left: 20px;  
 }
 
-.faq-section4 label{
+.faq-section4 label {
     font-size: 1.2em;
     background: #d3d3d3;
     display: block;
@@ -670,22 +707,22 @@ div#editProfile textarea {
     margin-left: 20px; 
 }
 
-.faq-section4 label::selection{
+.faq-section4 label::selection {
     background: none;
 }
 
-.faq-section4 label:hover{
+.faq-section4 label:hover {
     background: #f5f5f5;
 }
 
-.faq-section4 input[type=checkbox]:checked~label{
+.faq-section4 input[type=checkbox]:checked~label {
     border-color: #ff7f50;          
     background: #f5deb4;
     background-image: linear-gradient(to bottom, #fff, #f5deb4);
     box-shadow: 0 0 1px rgba(0,0,0,.4);             
 }
 
-.faq-section4 label::before{
+.faq-section4 label::before {
     content: '';
     position: absolute;
     right: 4px;
@@ -695,21 +732,17 @@ div#editProfile textarea {
     border-left-color: inherit; 
 }
 
-.faq-section4 input[type=checkbox]:checked~label::before{
+.faq-section4 input[type=checkbox]:checked~label::before {
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
-#rubfr
-{
+
+#rubfr {
 margin-top: 110px;
 margin-left: 20px;
 font-family: sans-serif;
-
-
-
-
 }
 
 
@@ -721,52 +754,3 @@ font-family: sans-serif;
 
 
 
-/* - - -  - - - - - - - - - - - - - 
- - - - - - - Register  - - - - - - -
- - - - - - - - - - - - - - - - - - */
- 
-#regForm {
-    width: 320px;
-    background: #fff;
-    border-radius: 5px;
-    opacity: 0.8;
-    float : right; 
-    margin-top: 110px;
-    margin-right: 40px;
-}
-
-#regform ul li {
-    display: block;
-}
-
-#regForm input, #regForm select {
-    width: 100%;
-    margin-left: -20px;
-    height: 42px;    
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-family: sans-serif;
-    padding: 0 20px 0 50px;
-    outline: none;
-    
-}
-
-
-#regForm h2 {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 150%;
-    text-align: center;
-    margin-left: 10px;
-}
-
-#regForm .btn {
-
-    height: 50px;
-    font-size: 22px;
-
-}

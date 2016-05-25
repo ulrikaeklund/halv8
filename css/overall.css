@@ -501,7 +501,6 @@ div#editProfile textarea {
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
     transition: all .15s ease-out; 
     margin-left: 20px;  
-   
 }
 
 .faq-section1 label::selection {
@@ -850,4 +849,59 @@ div#editProfile textarea {
     color: black;
     font-size: 150%;
     text-align: center;
+}
+
+
+.comments{
+    border-bottom: 1px solid darkgrey;
+    padding: 0 0 30px 0;
+    
+}
+
+.comments img {
+    overflow: hidden;
+    display: inline;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0 0 0 5px #f0f0f0;
+    -webkit-box-shadow: 0 0 0 5px #f0f0f0;
+    -moz-box-shadow: 0 0 0 5px #f0f0f0;
+    color: white;
+}
+
+#commentpic{
+    max-width: 100%;
+    max-height: 100%;
+    width: 60px;
+} 
+
+h6{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 70%;
+}
+
+.comment-content p{
+    display: inline;
+}
+
+#reply{
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+#reply textarea{
+    height: 50px;
+    width: 300px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-left: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 10px;
+    outline: none;
+    
 }

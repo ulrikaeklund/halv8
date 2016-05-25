@@ -13,6 +13,11 @@ a {
     text-decoration:none;
 }
 
+textarea {
+    resize: none;
+    outline: none;
+}
+
 h2 {
     font-family: sans-serif;
     font-weight: bold;
@@ -44,6 +49,11 @@ form input {
 .btn:hover {
     color: white;
     background-color: black;
+}
+
+.uploadPicture {
+    width: 30px;
+    cursor: pointer;
 }
 
 .formError {
@@ -449,7 +459,6 @@ div#editProfile select {
 
 div#editProfile textarea {
     height: 150px;
-    resize: none;
     padding: 4%;
 }
 
@@ -760,31 +769,102 @@ div#editProfile textarea {
  - - - - - - Wall - - - - - - - - -
  - - - - - - - - - - - - - - - - - */
 
-.postwall{
+#wall {
     position:absolute;
     top:0;
     bottom:0;
     left:0;
     right:0;
-    overflow:scroll;
     width: 500px;
     padding: 20px;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 3px;
     margin: 0 auto;
     opacity: 0.8; 
     margin-top: 110px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);  
 }
 
-#postForm{ 
-    border-bottom: 1px solid darkgrey;
+#wall h1 {
+    text-align: center;
+}
+
+
+#postForm textarea[name=comment] { 
     padding: 0 0 30px 0;
-    
+    float: right;
+    width: 400px;
+    font-size: 14px;
+    border: 0px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
 }
 
+#postForm .uploadPicture {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+}
+
+
+#postForm hr {
+    margin-right: 50px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+#postForm input[name=commentBtn] {
+    height: 30px;
+    position: relative;
+    left: 330px;
+    margin-top: 0px;
+    padding: 1px;
+}
+
+.commentBox {
+    border-radius: 6px;
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+    margin-right: 35px;
+}
+
+.commentName {
+    padding: 4px;
+    font-size: 22px;
+    margin-bottom: -5px;
+}
+
+.comment_time {
+    position: relative;
+    margin-left: 340px;
+    top: -10px;
+    padding: 4px;
+    font-size: 10px;
+}
+
+.comment {
+    margin-top: -15px;
+    padding: 4px;
+}
+
+.commentReply {
+    border: 0px;
+    width: 390px;
+    height: 20px;
+    margin-bottom: -28px;
+}
+
+.reply {
+    width: 20px;
+    margin-left: 400px;
+    position: relative;
+}
+
+.replyhr {
+    margin-bottom: -10px;
+}
+
+/*
 #postForm h2 {
     font-family: sans-serif;
     font-weight: bold;
@@ -828,11 +908,6 @@ div#editProfile textarea {
     text-align: center;
     height: 40px;
     padding: 4px;
-}
-
-.btn:hover {
-    color: white;
-    background-color: black;
 }
 
 #camera{

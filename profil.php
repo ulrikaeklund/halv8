@@ -6,8 +6,10 @@ include 'includes/overall/header.php';
 
 <div id="profilContent">
     <div class="avatar">
-        <img id="default" src="img/profile/defaultprofile.png" alt="Default profilbild">
         <?php 
+        if(empty($user_data['profile']) === true){
+            echo '<img src="img/profile/defaultprofile.png" alt="Default profilbild" id="default">';
+        }
         if(isset ($_FILES['profile']) === true){
             if(empty($_FILES['profile']['name']) === true){
                 echo 'Vänligen välj ett foto!';

@@ -8,7 +8,7 @@ include 'includes/overall/header.php';
     <div class="avatar">
         <?php 
         if(empty($user_data['profile']) === true){
-            echo '<img src="img/profile/defaultprofile.png" alt="Default profilbild" id="default">';
+            echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
         }
         if(isset ($_FILES['profile']) === true){
             if(empty($_FILES['profile']['name']) === true){

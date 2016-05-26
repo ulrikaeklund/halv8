@@ -9,41 +9,15 @@ include 'includes/overall/header.php';
         if(empty($user_data['profile']) === true){
             echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
         }
-        if(isset ($_FILES['profile']) === true){
-            if(empty($_FILES['profile']['name']) === true){
-                echo 'Vänligen välj ett foto!';
-            }
-            else{
-                $allowed = array('jpg', 'jpeg', 'gif', 'png');
-                
-                $file_name = $_FILES['profile']['name'];
-                $file_extn = strtolower(end(explode('.', $file_name)));
-                $file_temp = $_FILES['profile']['tmp_name'];
-                
-                if(in_array($file_extn, $allowed) === true){
-                    change_profile_image($session_user_id, $file_temp, $file_extn);
-                    $file_temp = array();
-                    header('Location: profil.php');
-                    exit();
-                }
-                else{
-                    echo 'Du har använt dig av felaktigt format.';
-                    echo implode(', ',$allowed);
-                }   
-            }
-        }
-        if(empty($user_data['profile']) === false){
-            echo '<img src="', $user_data['profile'],'" alt="', $user_data['first_name'] ,'s profilbild">';
-        } ?>
+         ?>
     </div>
     <div id="profil">
         <form action="" method="post" enctype="multipart/form-data" id="avatarPhoto">
-<!--
-            <input name="profile" type="file" id="updateProfilPic" style="display: none;">
-                <img src="img/fotocamera.png" class="uploadPicture" onclick="document.getElementById('updateProfilPic').click();" title="Välj en profilbild">
--->
-            <input type="file" name="profile">
-            <input type="submit" class="btn" id="foto_btn" value="Uppdatera din profilbild">
+            <input name="profile" type="file" id="profile" style="display: none;">
+            <img src="img/fotocamera.png" class="uploadPicture" onclick="document.getElementById('profile').click();" title="Välj en profilbild">
+            <script>document.getElementById('file').onchange = window.alert("sometext"); </script>
+<!--            <input type="file" name="profile">-->
+<!--            <input type="submit" class="btn" id="foto_btn" value="Uppdatera din profilbild">-->
         </form>
     </div>
     <h2>Bror Bugge</h2>

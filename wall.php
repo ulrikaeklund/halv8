@@ -2,16 +2,18 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 
-<<<<<<< HEAD
+
 if(empty($_POST['commentBtn']) === false) {
     if(empty($_POST['comment'])) {
         $errors[] = 'Tomt meddelande';
     } else {
-        set_comments($user_data['user_id'], $_POST['comment'], $_POST['commentPicture']);
+        $file_name = $_FILES['commentPicture']['name'];
+        $file_extn = strtolower(end(explode('.', $file_name)));
+        $file_temp = $_FILES['commentPicture']['tmp_name'];
+        set_comments($user_data['user_id'], $_POST['comment'], upload_comment_pic($user_id, $file_temp, $file_extn));
     }
 }
 ?>
-=======
 <div class="postwall">
             <div class="postrow">
                 <form id="postForm" method="post" action="">
@@ -40,7 +42,6 @@ if(empty($_POST['commentBtn']) === false) {
                 </div>
             </div>
         </div>
->>>>>>> origin/master
 
 <div id="wall">
     <h1>Min bjudning</h1><br><br>

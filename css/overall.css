@@ -245,6 +245,15 @@ nav form input[name=email], nav form input[name=password] {
     width: 100%; 
 }
 
+.uploadPicture {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    height: 40px;
+    width: auto;
+    display: block;
+}
 
 #profilbild{
     display: block;
@@ -821,11 +830,7 @@ div#editProfile textarea {
 
 }
 
-#postForm .uploadPicture {
-    position: absolute;
-    top: 120px;
-    right: 70px;
-}
+
 
 
 #postForm hr {

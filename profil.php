@@ -1,7 +1,6 @@
 <?php
 include 'core/init.php';
 include 'includes/overall/header.php';
-
 ?>
 
 <div id="profilContent">
@@ -23,6 +22,7 @@ include 'includes/overall/header.php';
                 
                 if(in_array($file_extn, $allowed) === true){
                     change_profile_image($session_user_id, $file_temp, $file_extn);
+                    $file_temp = array();
                     header('Location: profil.php');
                     exit();
                 }
@@ -38,8 +38,12 @@ include 'includes/overall/header.php';
     </div>
     <div id="profil">
         <form action="" method="post" enctype="multipart/form-data" id="avatarPhoto">
+<!--
+            <input name="profile" type="file" id="updateProfilPic" style="display: none;">
+                <img src="img/fotocamera.png" class="uploadPicture" onclick="document.getElementById('updateProfilPic').click();" title="Välj en profilbild">
+-->
             <input type="file" name="profile">
-            <input type="submit" class="btn" name="foto_btn" value="Uppdatera din profilbild">
+            <input type="submit" class="btn" id="foto_btn" value="Uppdatera din profilbild">
         </form>
     </div>
     <h2>Bror Bugge</h2>

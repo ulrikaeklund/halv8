@@ -5,6 +5,13 @@ function change_profile_image($user_id, $file_temp, $file_extn){
     mysql_query("UPDATE users SET profile = '". mysql_real_escape_string($file_path) ."' WHERE user_id = " . (int)$user_id);
 }
 
+function upload_comment_pic($user_id, $file_temp, $file_extn){
+    $file_path = 'img/pictures/' . substr(md5(time()), 0, 10) . '.' . $file_extn;
+    move_uploaded_file($file_temp, $file_path);
+    
+    return $file_path
+}
+
 function register_user($register_data) {
     array_walk($register_data, 'array_sanitize');
     $salt = substr(sha1(mt_rand()),0,22);

@@ -12,7 +12,7 @@ include 'includes/overall/header.php';
                     <h3>Antal aktiva användare</h3>
                     <h1>38</h1>
                 </div>
-                <button class="btn" id="toUsers">Redigera användare</button>
+                <a href="admin_user.php"><button class="btn" id="toUsers" action="admin_user.php">Redigera användare</button></a>
             </section>
             <section id="middle">
                 <section class="bjudningstable">
@@ -74,7 +74,7 @@ include 'includes/overall/header.php';
                         </table>
                     </div>
                 </section>
-                <button class="btn" id="toBjud">Redigera bjudningar</button>
+                <a href="admin_bjud.php"><button class="btn" id="toBjud" action="admin_bjud.php">Redigera bjudningar</button></a>
 	   </section>
 	   <aside id="sidebar">
            <section class="commentstable">
@@ -153,7 +153,7 @@ include 'includes/overall/header.php';
                    </table>
                </div>
             </section>
-           <button class="btn" id="toComments">Redigera kommentarer</button>
+           <a href="admin_comments.php"><button class="btn" id="toComments">Redigera kommentarer</button></a>
             </aside>
         </div>
 

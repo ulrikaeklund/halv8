@@ -36,7 +36,6 @@ if(empty($_POST['replyBtn']) === false) {
     </form>
     </div>   
 <?php
-    get_comments();
-?>
+    get_comments();?>
 </div>
 <?php include 'includes/overall/footer.php';?>

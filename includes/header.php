@@ -6,6 +6,7 @@
                     <li><a class="btn" href="bjudning.php">BJUDNING</a></li>
                     <li><a class="btn" href="profil.php">PROFIL</a></li>
                     <li><a class="btn" href="faq.php">FRÅGOR</a></li>
+                    <li><a class="btn" href="social.php">SOCIALA REGLER</a></li>
                     <li><a class="btn" href="logout.php">LOGGA UT</a></li>
                 </ul>'; 
         } else { 

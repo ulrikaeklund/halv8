@@ -1155,3 +1155,42 @@ section{
     margin-top: 120px;
 
 }
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Sociala Regler - - - - 
+ - - - - - - - - - - - - - - - - - */
+
+#social{
+    width: 500px;
+    height: 600px;
+    overflow: scroll;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 110px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075); 
+}
+
+#social h2{ 
+    text-align: center;
+    
+}
+
+#social h3{
+    font-family: sans-serif;
+    margin-top: 20px;
+    
+}
+
+#social p{
+    line-height: 150%;
+    
+}
+    
+    
+#trivsel li{
+    list-style: square;
+}

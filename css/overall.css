@@ -503,6 +503,7 @@ div#editProfile textarea {
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 .faq-section1 {
     width: 400px;
     position: relative;
@@ -512,8 +513,17 @@ div#editProfile textarea {
 }
 
 .faq-section1 p {
+=======
+#faq-section1{
+    margin: 70px 0;
+        position: relative;
+}
+
+#faq-section1 p{
+>>>>>>> Stashed changes
     display: none;
 }   
+<<<<<<< Updated upstream
 
 .faq-section1 input {
     position: absolute;
@@ -524,6 +534,15 @@ div#editProfile textarea {
               
 .faq-section1 input[type=checkbox]:checked~p {
     background: #d3d3d3;
+=======
+#faq-section1 input{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;          
+}                  
+#faq-section1 input[type=checkbox]:checked~p{
+>>>>>>> Stashed changes
     display: block;
     position: relative;
     height: 80px;
@@ -537,7 +556,12 @@ div#editProfile textarea {
     margin-top: -5px; 
 }
 
+<<<<<<< Updated upstream
 .faq-section1 label {
+=======
+#faq-section1 label{
+    font-size: 1.2em;
+>>>>>>> Stashed changes
     background: #d3d3d3;
     display: block;
     position: relative;
@@ -551,6 +575,7 @@ div#editProfile textarea {
     margin-left: 20px; 
 }
 
+<<<<<<< Updated upstream
 .faq-section1 label::selection {
     background: none;
 }
@@ -560,6 +585,23 @@ div#editProfile textarea {
 }
 
 .faq-section1 label::before {
+=======
+#faq-section1 label::selection{
+    background: none;
+}
+
+#faq-section1 label:hover{
+    background: #f5f5f5;
+}
+
+#faq-section1 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+#faq-section1 label::before{
+>>>>>>> Stashed changes
     content: '';
     position: absolute;
     right: 4px;
@@ -568,34 +610,55 @@ div#editProfile textarea {
     border: 6px solid transparent;
     border-left-color: inherit; 
 }
+<<<<<<< Updated upstream
 .faq-section1 input[type=checkbox]:checked~label::before {
+=======
+#faq-section1 input[type=checkbox]:checked~label::before{
+>>>>>>> Stashed changes
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
+<<<<<<< Updated upstream
 
 .faq-section2 {
     width: 400px;
+=======
+#faq-section2{
+    margin: 70px 0;
+>>>>>>> Stashed changes
     position: relative;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
+<<<<<<< Updated upstream
 .faq-section2 p {
     display: none;
 
 }   
 .faq-section2 input {
+=======
+#faq-section2 p{
+    display: none;
+
+}   
+#faq-section2 input{
+>>>>>>> Stashed changes
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
+<<<<<<< Updated upstream
 .faq-section2 input[type=checkbox]:checked~p {
     background: #d3d3d3;
+=======
+#faq-section2 input[type=checkbox]:checked~p{
+>>>>>>> Stashed changes
     display: block;
     position: relative;
     height: 80px;
@@ -609,7 +672,12 @@ div#editProfile textarea {
     margin-top: -5px; 
 }
 
+<<<<<<< Updated upstream
 .faq-section2 label {
+=======
+#faq-section2 label{
+    font-size: 1.2em;
+>>>>>>> Stashed changes
     background: #d3d3d3;
     display: block;
     position: relative;
@@ -624,6 +692,7 @@ div#editProfile textarea {
    
 }
 
+<<<<<<< Updated upstream
 .faq-section2 label::selection {
     background: none;
 }
@@ -633,6 +702,24 @@ div#editProfile textarea {
 }
 
 .faq-section2 label::before {
+=======
+#faq-section2 label::selection{
+    background: none;
+}
+
+#faq-section2 label:hover{
+    background: #f5f5f5;
+}
+
+#faq-section2 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+#faq-section2 label::before{
+>>>>>>> Stashed changes
     content: '';
     position: absolute;
     right: 4px;
@@ -641,15 +728,24 @@ div#editProfile textarea {
     border: 6px solid transparent;
     border-left-color: inherit; 
 }
+<<<<<<< Updated upstream
 .faq-section2 input[type=checkbox]:checked~label::before {
+=======
+#faq-section2 input[type=checkbox]:checked~label::before{
+>>>>>>> Stashed changes
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
 
+<<<<<<< Updated upstream
 .faq-section3 {
     width: 400px;
+=======
+#faq-section3{
+    margin: 70px 0;
+>>>>>>> Stashed changes
     position: relative;
     margin-bottom: 15px;
     margin-left: auto;
@@ -657,19 +753,31 @@ div#editProfile textarea {
 }
 
 
+<<<<<<< Updated upstream
 .faq-section3 p {
+=======
+#faq-section3 p{
+>>>>>>> Stashed changes
     display: none;
 }   
 
+<<<<<<< Updated upstream
 .faq-section3 input {
+=======
+#faq-section3 input{
+>>>>>>> Stashed changes
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
+<<<<<<< Updated upstream
 .faq-section3 input[type=checkbox]:checked~p {
     background: #d3d3d3;
+=======
+#faq-section3 input[type=checkbox]:checked~p{
+>>>>>>> Stashed changes
     display: block;
     position: relative;
     height: 80px;
@@ -683,7 +791,12 @@ div#editProfile textarea {
     margin-top: -5px; 
 }
 
+<<<<<<< Updated upstream
 .faq-section3 label {
+=======
+#faq-section3 label{
+    font-size: 1.2em;
+>>>>>>> Stashed changes
     background: #d3d3d3;
     display: block;
     position: relative;
@@ -696,6 +809,7 @@ div#editProfile textarea {
     transition: all .15s ease-out; 
     margin-left: 20px;  
 }
+<<<<<<< Updated upstream
 
 .faq-section3 label::selection {
     background: none;
@@ -706,6 +820,24 @@ div#editProfile textarea {
 }
 
 .faq-section3 label::before {
+=======
+#faq-section3 label::selection{
+    background: none;
+}
+
+#faq-section3 label:hover{
+    background: #f5f5f5;
+}
+
+#faq-section3 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+#faq-section3 label::before{
+>>>>>>> Stashed changes
     content: '';
     position: absolute;
     right: 4px;
@@ -715,34 +847,57 @@ div#editProfile textarea {
     border-left-color: inherit; 
 }
 
+<<<<<<< Updated upstream
 .faq-section3 input[type=checkbox]:checked~label::before {
+=======
+#faq-section3 input[type=checkbox]:checked~label::before{
+>>>>>>> Stashed changes
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
+<<<<<<< Updated upstream
 
 .faq-section4{
     width: 400px;
+=======
+#faq-section3{
+    margin: 70px 0;
+>>>>>>> Stashed changes
     position: relative;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
+<<<<<<< Updated upstream
 .faq-section4 p {
     display: none;
 }   
 
 .faq-section4 input {
+=======
+
+#faq-section4 p{
+  display: none;
+
+}   
+
+#faq-section4 input{
+>>>>>>> Stashed changes
     position: absolute;
     z-index: 2;
     cursor: pointer;
     opacity: 0;         
 }
                     
+<<<<<<< Updated upstream
 .faq-section4 input[type=checkbox]:checked~p {
     background: #d3d3d3;
+=======
+#faq-section4 input[type=checkbox]:checked~p{
+>>>>>>> Stashed changes
     display: block;
     position: relative;
     height: 80px;
@@ -756,7 +911,12 @@ div#editProfile textarea {
     margin-top: -5px; 
 }
 
+<<<<<<< Updated upstream
 .faq-section4 label {
+=======
+#faq-section4 label{
+    font-size: 1.2em;
+>>>>>>> Stashed changes
     background: #d3d3d3;
     display: block;
     position: relative;
@@ -771,6 +931,7 @@ div#editProfile textarea {
    
 }
 
+<<<<<<< Updated upstream
 .faq-section4 label::selection {
     background: none;
 }
@@ -780,6 +941,24 @@ div#editProfile textarea {
 }
 
 .faq-section4 label::before {
+=======
+#faq-section4 label::selection{
+    background: none;
+}
+
+#faq-section4 label:hover{
+    background: #f5f5f5;
+}
+
+#faq-section4 input[type=checkbox]:checked~label{
+    border-color: #ff7f50;          
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0,0,0,.4);             
+}
+
+#faq-section4 label::before{
+>>>>>>> Stashed changes
     content: '';
     position: absolute;
     right: 4px;
@@ -789,12 +968,17 @@ div#editProfile textarea {
     border-left-color: inherit; 
 }
 
+<<<<<<< Updated upstream
 .faq-section4 input[type=checkbox]:checked~label::before {
+=======
+#faq-section4 input[type=checkbox]:checked~label::before{
+>>>>>>> Stashed changes
     border: 6px solid transparent;
     border-top-color: inherit;
     margin-top: -3px;
     right: 10px;    
 }
+<<<<<<< Updated upstream
 
 /* - - -  - - - - - - - - - - - - - 
  - - - - - - Wall - - - - - - - - -
@@ -882,6 +1066,27 @@ div#editProfile textarea {
     background-color: white;
     border: 0.5px solid #000000;
     margin-top: 10px;
+=======
+#rubfr
+{
+margin-top: 110px;
+margin-left: 20px;
+font-family: sans-serif;
+}
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Register  - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+ 
+#regForm {
+    width: 320px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0.8;
+    float : right; 
+    margin-top: 110px;
+    margin-right: 40px;
+>>>>>>> Stashed changes
 }
 
 .comment_box .comment_profilePicture {

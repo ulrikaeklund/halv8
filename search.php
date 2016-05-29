@@ -1,37 +1,37 @@
 <?php
 include 'core/init.php';
+include 'includes/overall/header.php';
+
+
+
 $output = '';
 if(isset($_POST['search'])){
-  $searchq = $_POST['search'];
-
-$query = mysql_qurey("SELECT * FROM users WHERE email LIKE '%$searchq%'") or die ("Kunde inte söka");
-$count = mysql_num_rows($query);
-if($count == 0){
-  $output = 'Ingen anvädnare hittad!';
-}
-else{
-  while($row = mysql_fetch_array($query)){
-    $email = $row['email'];
-
-    $output .= '<div>'.$email.'</div>';
-
-    } 
-  }
+    $searchq = $_POST['search'];
+    
+    $query = mysql_query("SELECT * FROM users WHERE first_name LIKE '%".$searchq."%' OR last_name LIKE '%".$searchq."%'") or die("Kunde inte söka");
+    
+    if (trim($_POST['search']) == ''){
+        $output = 'Ingen anvädnare hittad!';
+    }
+    else{
+        if(mysql_num_rows($query) > 0){
+            while($row = mysql_fetch_array($query)){
+                $first_name = $row['first_name'];
+                $last_name = $row['last_name'];
+      
+                $output .= '<div>'.$first_name.' '.$last_name.  '</div>';
+                }
+        } 
+    }
 }
 ?>
 
-
-<html>
-<head>
-<title>Search</title>
-<body>
-<form action="search.php" method="post">
-<input type="text" name="search" placeholder="Sök här!"/>
-<input type="submit" value=">>"/>
-</form>
-<?php print("");?>
-</body>
-</head>
+<div id="searchFunc">
+    <form action="search.php" method="post">
+        <input type="text" name="search" placeholder="Sök efter användare...">
+        <input type="submit" value="SÖK &#128270;" class="btn">
+    </form>
+    <?php print("$output"); ?>
+</div>
 
 
-</html>

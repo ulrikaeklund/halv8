@@ -15,12 +15,14 @@ include 'includes/overall/header.php';
                 
                 $file_name = $_FILES['profile']['name'];
                 $file_name = explode('.', $file_name);
-                $file_extn = strtolower(end($file_name ));
+                $file_extn = strtolower(end($file_name));
                 $file_temp = $_FILES['profile']['tmp_name'];
                 
                 if(in_array($file_extn, $allowed) === true){
                     change_profile_image($session_user_id, $file_temp, $file_extn);
-                    
+                    $file_temp = array();
+                    header('Location: profil.php');
+                    exit();
                 }
                 else{
                     echo 'Felaktig filtyp. Tillåtna filtyper: ';

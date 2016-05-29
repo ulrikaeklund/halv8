@@ -25,5 +25,4 @@ include 'includes/overall/header.php';
         <p>När du parats ihop med tre andra personer kommer ni att hamnat i ett forum, där ni kan kommunicera med varandra,lägga upp bilder och kommentera andra inlägg.</p> 
     </section>
 </div>
-<?php include 'includes/overall/footer.php'?>
-
+<?php include 'includes/overall/footer.php';?>

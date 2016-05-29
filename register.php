@@ -1,6 +1,6 @@
 <?php
 if (empty($_POST['regBtn']) === false) {
-    $required_fields = array('email','password','password_again');
+    $required_fields = array('email','password','password_again', 'first_name', 'last_name');
     foreach($_POST as $key=>$value) {
         if ((empty($value) && in_array($key, $required_fields) === true) || $_POST['city'] == "Välj stad") {
             $errors['fields'] = 'Vänligen fyll i alla fält.';
@@ -27,6 +27,8 @@ if (empty($_POST['regBtn']) === false) {
 if (empty($_POST['regBtn']) === false && empty($errors) === true) {
     $register_data = array (
             'email'         => $_POST['email'],
+            'first_name'    => $_POST['first_name'],
+            'last_name'     => $_POST['last_name'],
             'password'      => $_POST['password'],
             'city'          => $_POST['city'],
     );
@@ -45,6 +47,12 @@ if (empty($_POST['regBtn']) === false && empty($errors) === true) {
             <input type="text" name="email" placeholder="E-post"> 
             <?php form_errors($errors['email']);
                   form_errors($errors['email2']); ?>
+        </li>
+        <li>
+            <input type="text" name="first_name" placeholder="Förnamn"> 
+        </li>
+        <li>
+            <input type="text" name="last_name" placeholder="Efternamn"> 
         </li>
         <li>
             <input type="password" name="password" placeholder="Lösenord">

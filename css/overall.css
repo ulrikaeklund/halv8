@@ -156,7 +156,7 @@ nav form input[name=email], nav form input[name=password] {
     display: block;
 }
 
-#regForm input[name=email], #regForm input[name=password], #regForm input[name=password_again], #regForm select {
+#regForm input[name=email], #regForm input[name=password], #regForm input[name=password_again], #regForm input[name=first_name], #regForm input[name=last_name], #regForm select {
     width: 100%;
     margin-left: -20px;
     height: 42px;    
@@ -246,16 +246,6 @@ nav form input[name=email], nav form input[name=password] {
     width: 100%; 
 }
 
-.uploadPicture {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: -30px;
-    height: 40px;
-    width: auto;
-    display: block;
-}
-
 #profilbild{
     display: block;
     max-width: 100%;
@@ -276,138 +266,6 @@ nav form input[name=email], nav form input[name=password] {
   line-height: 26px;
   margin-bottom: 20px;
   color: #666;
-}
-
-/* - - -  - - - - - - - - - - - - - 
- - - - - - - Bjudning - - - - - - -
- - - - - - - - - - - - - - - - - - */
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
-
-.searchBjud {
-    width: 450px;
-    height: 480px;
-    color: black;
-    font: 500 1.2em/1.2 'Roboto', sans-serif;
-    margin: 0 auto;
-    margin-top: 120px;
-    background-color: #fff;
-    padding: 0 0 20px 20px;
-    opacity: 0.8;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    user-select: none;
-}
-
-#searchForm h2 {
-    margin: 0;
-    padding-top: 20px;
-    font-size: 100%;
-    text-align: center;
-    
-}
-
-#searchForm .btn {
-    width: 150px;
-    height: 35px;
-    margin-left: 270px;  
-    padding: 5px;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 80%;
-}
-
-.items h3 {
-    position: relative;
-    margin: 0;
-    padding: 10px 0;
-}
-
-h3::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: -20px;
-    width: 5px;
-    background-color: #404040;
-}
-
-h3::after {
-    display: block;
-    float: right;
-    font-weight: normal;
-}
-
-.done {
-    order: 1;
-}
-
-.undone {
-    order: 3;
-}
-
-.items input[type=checkbox] {
-    display: block;
-    height: 53px;
-    margin: 0 0 -53px -9999px;
-    order: 4;
-    outline: none;
-}
-
-.items label {
-    display: block;
-    position: relative;
-    padding: 10px 0 10px 45px;
-    border-top: 1px dashed #ccc;
-    order: 4;
-    cursor: pointer;
-    animation: undone .5s;
-}
-
-.items label::before {
-    content: "\f096"; 
-    display: block;
-    position: absolute;
-    top: 11px;
-    left: 10px;
-    font: 100% 'FontAwesome';
-}
-
-.items label:hover, input:focus + label {
-    color: #b30000
-}
-
-.items input[type=checkbox]:checked + label {
-    order: 2;
-}
-
-.items input[type=checkbox]:checked + label::before {
-    content: '\2714';
-	position: absolute;
-	top: 5px;
-	left: 3px;
-	color: #b30000;
-    font: 100% 'FontAwesome';
-	left: 6px;
-}
-
-#searchForm .btn {
-    height: 40px;
-    width: 100px;
-    margin-left: 170px;
-}
-#searchForm .btn:hover {
-    background-color: gray;
 }
 
 /* - - -  - - - - - - - - - - - - - 
@@ -799,20 +657,208 @@ div#editProfile textarea {
 }
 
 /* - - -  - - - - - - - - - - - - - 
- - - - - - - Wall - - - - - - - - -
+ - - - - - - Bjudning - - - - - - -
  - - - - - - - - - - - - - - - - - */
 
-#wall {
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
+
+.searchBjud {
+    width: 450px;
+    height: 480px;
+    color: black;
+    font: 500 1.2em/1.2 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 0 0 20px 20px;
+    opacity: 0.8;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    user-select: none;
+}
+
+#searchForm h2 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 100%;
+    text-align: center;
+    
+}
+
+#searchForm .btn {
+    width: 150px;
+    height: 35px;
+    margin-left: 270px;  
+    padding: 5px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 80%;
+}
+
+.items h3 {
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h3::before {
+    content: '';
+    display: block;
     position: absolute;
-    top:0;
+    top: 10px;
+    bottom: 10px;
+    left: -20px;
+    width: 5px;
+    background-color: #404040;
+}
+
+h3::after {
+    display: block;
+    float: right;
+    font-weight: normal;
+}
+
+.done {
+    order: 1;
+}
+
+.undone {
+    order: 3;
+}
+
+.items input[type=checkbox] {
+    display: block;
+    height: 53px;
+    margin: 0 0 -53px -9999px;
+    order: 4;
+    outline: none;
+}
+
+.items label {
+    display: block;
+    position: relative;
+    padding: 10px 0 10px 45px;
+    border-top: 1px dashed #ccc;
+    order: 4;
+    cursor: pointer;
+    animation: undone .5s;
+}
+
+.items label::before {
+    content: "\f096"; 
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font: 100% 'FontAwesome';
+}
+
+.items label:hover, input:focus + label {
+    color: #b30000
+}
+
+.items input[type=checkbox]:checked + label {
+    order: 2;
+}
+
+.items input[type=checkbox]:checked + label::before {
+    content: '\2714';
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	color: #b30000;
+    font: 100% 'FontAwesome';
+	left: 6px;
+}
+
+#searchForm .btn {
+    height: 40px;
+    width: 100px;
+    margin-left: 170px;
+}
+#searchForm .btn:hover {
+    background-color: gray;
+}
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - Acceptera bjudning - - - -
+ - - - - - - - - - - - - - - - - - */
+
+#bjudningAccept {
+    position: absolute;
+    top:80px;
     left:0;
     right:0;
-    width: 500px;
+    width: 800px;
     padding: 20px;
     background-color: #e6e6e6;
     border-radius: 3px;
     margin: 0 auto;
     margin-top: 110px;
+    opacity: 0.8;
+}
+
+#bjudningAccept h2, #bjudningAccept h3 {
+    text-align: center;
+}
+
+#bjudningAccept ul {
+    margin-left: 40px;
+}
+
+#bjudningAccept ul li {
+    display: inline-block;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.deltagare {
+    float: right;
+    margin-top: 100px;
+}
+
+#bjudningAccept p {
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+.accept_profilePicture {
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+#bjudningAccept .btn {
+    margin-left: 300px;
+}
+
+/* - - -  - - - - - - - - - - - - - 
+ - - - - - - Wall - - - - - - - - -
+ - - - - - - - - - - - - - - - - - */
+
+#wall {
+    position: relative;
+    top:10px;
+    left:0;
+    right:0;
+    width: 500px;
+    min-height: 300px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .comment_profilePicture {
@@ -1020,6 +1066,42 @@ div#editProfile textarea {
     padding: 10px;
     outline: none;
     
+}
+
+/* Bjudningar - - - - - - - - - */
+
+#wall_bjudningar {
+    margin-top: 100px;
+    position: relative;
+    background-color: #e6e6e6;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+
+#wall_bjudningar ul {
+    margin-left: 50px;   
+}
+
+#wall_bjudningar ul li {
+    margin-top: 10px;
+    margin-right: 50px;
+    display: inline-block;
+    text-align: center;
+   
+}
+
+
+#wall_bjudningar .wall_name {
+    margin-top: 2px;
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+#wall_bjudningar .wall_bjudningstid {
+    margin-top: -14px;
+    color: green;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
 /* - - -  - - - - - - - - - - - - - 

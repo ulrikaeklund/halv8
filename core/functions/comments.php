@@ -1,8 +1,8 @@
 <?php
-function set_comments($user_id, $comment, $commentPicture) {
+function set_comments($user_id, $comment, $commentPicture, $bjudning_id) {
     $time = date("G:i d/m/Y");
     sanitize($comment); sanitize($commentPicture); sanitize(user_id); sanitize(date);    
-    mysql_query("INSERT INTO comments (user_id, text, date, picture) VALUES ('$user_id', '$comment', '$time', '$commentPicture')");
+    mysql_query("INSERT INTO comments (user_id, text, date, picture, bjudning_id) VALUES ('$user_id', '$comment', '$time', '$commentPicture', $bjudning_id)");
 }
 
 function set_reply($user_id, $comment) {
@@ -11,8 +11,8 @@ function set_reply($user_id, $comment) {
     mysql_query("INSERT INTO comments (user_id, text, date, reply_id) VALUES ('$user_id', '$comment', '$time', '$id')");
 }
 
-function get_comments() {
-    $result = mysql_query("SELECT * FROM comments WHERE reply_id=0 ORDER BY comment_id DESC");
+function get_comments($bjudning_id) {
+    $result = mysql_query("SELECT * FROM comments WHERE reply_id=0 AND bjudning_id=$bjudning_id ORDER BY comment_id DESC");
     while ($row = mysql_fetch_assoc($result)) {
         $user_data = user_data($row['user_id'], 'first_name', 'last_name', 'profile');
         //Display comments

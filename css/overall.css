@@ -229,7 +229,7 @@ nav form input[name=email], nav form input[name=password] {
 }
 
 .avatar {
-    border-radius: 100px;
+/*    border-radius: 100px;*/
     overflow: hidden;
     height: 150px;
     width: 150px;
@@ -239,11 +239,12 @@ nav form input[name=email], nav form input[name=password] {
     box-shadow: 0 0 0 13px #f0f0f0;
     -webkit-box-shadow: 0 0 0 13px #f0f0f0;
     -moz-box-shadow: 0 0 0 13px #f0f0f0;
-    color: white;
+    color: black;
 }
 
 .avatar img{
-    width: 100%; 
+    width: 100%;
+    
 }
 
 #profilbild{

@@ -30,12 +30,12 @@ include 'includes/overall/header.php';
                 }
             }
         }
-        if(empty($user_data['profile']) === true){
-            echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
-        }
-        else{
-             
-        }
+//        if(empty($user_data['profile']) === true){
+//            echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
+//        }
+//        else{
+//             
+//        }
         if(empty($user_data['profile']) === false){
              echo '<img src="', $user_data['profile'], '" id="profilbild">';   
         }

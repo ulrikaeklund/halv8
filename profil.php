@@ -20,7 +20,7 @@ include 'includes/overall/header.php';
                 
                 if(in_array($file_extn, $allowed) === true){
                     change_profile_image($session_user_id, $file_temp, $file_extn);
-                    
+                    $file_temp = array ();
                     header('Location: profil.php');
                     exit();
                 }

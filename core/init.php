@@ -12,7 +12,7 @@ $errors = array();
 
 if (logged_in() === true) {
     $session_user_id = $_SESSION['user_id'];
-    $user_data = user_data($session_user_id, 'user_id', 'first_name', 'last_name', 'email', 'password', 'city', 'dagar', 'searching', 'profile', 'bjudning_id', 'accept', 'about');
+    $user_data = user_data($session_user_id, 'user_id', 'first_name', 'last_name', 'email', 'password', 'city', 'dagar', 'searching', 'profile', 'bjudning_id', 'accept', 'about', 'sociala_regler');
 }
 
 ?>

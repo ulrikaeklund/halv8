@@ -2,6 +2,11 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 
+if ($user_data['sociala_regler'] == false) {
+    echo '<script type="text/javascript">window.location = "social.php"</script>'; 
+    exit(); 
+}
+
 //i en aktiv bjudning
 $bjudning_id = $user_data['bjudning_id'];
 $active = mysql_result(mysql_query("SELECT aktiv FROM bjudning WHERE bjudning_id = '$bjudning_id'"), 0);

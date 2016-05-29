@@ -1,6 +1,12 @@
 <?php
 include 'core/init.php';
 include 'includes/overall/header.php';
+
+$user_id = $user_data['user_id'];
+if (empty($_POST['socialBtn']) === false) {
+    mysql_query("UPDATE users SET sociala_regler='1' WHERE user_id = $user_id");
+    echo '<script type="text/javascript">window.location = "bjudning.php"</script>';
+}
 ?>
 <div id="social">
     <h2>Sociala Regler för Halv åtta hos mig</h2>
@@ -21,6 +27,9 @@ include 'includes/overall/header.php';
     <p>När en bjudningsdeltagare laddar upp någon form av användargenererat innehåll ger de även Halvåttahosmig oinskränkt rätt att förfoga över detta innehåll(PUL 11 §). Denna förfoganderätt kvarstår även om innehållet har blivit raderat från webbsidan.</p>
     <p>Interaktion med andra bjudningsdeltagare.</p>
     <p>När en bjudningsdeltagare brukar halvåttahosmigs tjänst för att träffa andra individer, så gör de det i med full förståelse för att de själva bär fullt ansvar för sin interaktion. Bjudningsdeltagaren förstår även att Halvåttahosmig inte genomför några bakgrundskontroller på sina bjudningsdeltagare och att den information som är bifogad på sidan inte nödvändigtvis behöver vara sanningsenlig.</p>
+    <form method="POST">
+        <input type="submit" class="btn" value="ACCEPTERA" name="socialBtn" id="socialBtn">
+    </form>
 </div>
 
 <?php include 'includes/overall/footer.php'?>

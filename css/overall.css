@@ -1293,18 +1293,21 @@ section{
     list-style: square;
 }
 
+#socialBtn {
+    margin-left: 160px;
+}
+
 /* - - -  - - - - - - - - - - - - - 
  - - - - - - Sökfunktion - - - - - - 
  - - - - - - - - - - - - - - - - - */
 
 #searchFunc{
     font-family: sans-serif;
+    position: absolute;
     width: 250px;
-    height: auto;
-    height: auto;
     padding: 10px;
-    background-color: #fff;
-    opacity: 0.8;
+    margin-left: 400px;
+    top: -13px;
     border-radius: 5px;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.075);
@@ -1328,4 +1331,5 @@ section{
 
 #searchFunc input[type="submit"]{
     font-size: 16px;
+    margin-left: -10px;
 }

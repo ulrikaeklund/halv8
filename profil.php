@@ -20,7 +20,7 @@ include 'includes/overall/header.php';
                 
                 if(in_array($file_extn, $allowed) === true){
                     change_profile_image($session_user_id, $file_temp, $file_extn);
-                    $file_temp = array();
+                    
                     header('Location: profil.php');
                     exit();
                 }
@@ -30,9 +30,14 @@ include 'includes/overall/header.php';
                 }
             }
         }
-        
+        if(empty($user_data['profile']) === true){
+            echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
+        }
+        else{
+             
+        }
         if(empty($user_data['profile']) === false){
-            echo '<img src="', $user_data['profile'], '" alt="', $user_data['first_name'], ' \'s profilbild" id="profilbild">';   
+             echo '<img src="', $user_data['profile'], '" id="profilbild">';   
         }
         ?>
     </div>

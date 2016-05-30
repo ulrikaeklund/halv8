@@ -21,7 +21,8 @@ include 'includes/overall/header.php';
                 if(in_array($file_extn, $allowed) === true){
                     change_profile_image($session_user_id, $file_temp, $file_extn);
                     $file_temp = array ();
-                    header('Location: profil.php');
+                    $file_name = array ();
+                    echo '<script type="text/javascript">window.location = "profil.php"</script>'; 
                     exit();
                 }
                 else{
@@ -33,23 +34,24 @@ include 'includes/overall/header.php';
 //        if(empty($user_data['profile']) === true){
 //            echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
 //        }
-//        else{
-//             
-//        }
+       
         if(empty($user_data['profile']) === false){
              echo '<img src="', $user_data['profile'], '" id="profilbild">';   
         }
+        else{           
+           echo '<img src="img/pictures/defaultprofile.png" alt="Default profilbild" id="default">';
+            echo $user_data['profile'];
+      }
         ?>
+        
     </div>
     <div id="profil">
         <form action="" method="post" enctype="multipart/form-data" id="avatarPhoto">
-<!--
             <label for="profile">
                 <img src="img/fotocamera.png" class="uploadPicture" title="Välj en profilbild">
-style="display: none;
+
             </label>
--->
-            <input name="profile" type="file" id="profile">
+            <input name="profile" type="file" id="profile" style="display: none;">
             <input type="submit" class="btn" value="Välj bild">
             
         </form>

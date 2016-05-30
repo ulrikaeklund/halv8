@@ -12,6 +12,7 @@ if (empty($_POST['socialBtn']) === false) {
     <h2>Sociala Regler för Halv åtta hos mig</h2>
     <h3>Allmänt</h3>
     <p>Bjudningsdeltagare förbinder sig att genomföra de bjudningar de anmäler sig till med godtagbar kvalité. Vad som menas med godtagbar kvalité avgörs av bjudningens gäster där ett snittbetyg på minst 3/10 måste erhållas i samband med bjudning. Vid bristfälliga omdömen, otrevligt uppförande, utebliven närvaro eller annat negativt beteende kan användaren stängas av från sidan. Alla bjudningsdeltagare måste vara minst 18 år gamla.</p>
+    <p>Eftersom vi kommer att skapa en databas med uppgifter om de personer som ansluter sig till vår tjänst, måste vi informera om detta på den sida där kunderna skapar sin profil. Vid en eventuell lansering kommer det finnas en ruta som de måste kryssa i för att markera att de samtycker till att deras uppgifter lagras och att hanteringen sker i enlighet med lagstiftningen i personuppgiftslagen (1998:204).</p>
     <h3>Trivselregler</h3>
     <p>God ton och trevligt uppförande är en självklarhet för en trevlig middagsbjudning. Därför är det inte tillåtet att använda webbsidans funktionalitet för att: </p>
     <ul id="trivsel">

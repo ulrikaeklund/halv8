@@ -5,10 +5,10 @@
         echo    '<ul>
                     <li><a class="btn" href="bjudning.php">BJUDNING</a></li>
                     <li><a class="btn" href="profil.php">PROFIL</a></li>
+                    <li><a class="btn" href="search.php">SÖK</a></li>
                     <li><a class="btn" href="faq.php">FRÅGOR</a></li>
                     <li><a class="btn" href="logout.php">LOGGA UT</a></li>
                 </ul>'; 
-                require 'search.php';
         } else { 
             echo '<form method="post" id="loginForm" action=""> 
                     <input type="text" name="email" placeholder="E-mail">

@@ -1,4 +1,9 @@
 <?php
+include 'core/init.php';
+include 'includes/overall/header.php';
+
+
+
 $output = '';
 if(isset($_POST['search'])){
     $searchq = $_POST['search'];

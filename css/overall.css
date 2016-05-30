@@ -1242,6 +1242,13 @@ section{
 /* - - -  - - - - - - - - - - - - - 
  - - - - - - Admin-sidorna - - - - 
  - - - - - - - - - - - - - - - - - */
+#raderaBtn { 
+    margin-left: -15px;
+}
+
+#adminBtn {
+    margin-left: 10px;
+}
 
 .tbl h1{
     font-size: 34px;
@@ -1302,14 +1309,15 @@ section{
  - - - - - - - - - - - - - - - - - */
 
 #searchFunc{
-    font-family: sans-serif;
     position: absolute;
+    font-family: sans-serif;
     width: 250px;
+    margin-top:200px;
+    margin-left:500px;
     padding: 10px;
-    margin-left: 400px;
-    top: -13px;
+    background-color: #fff;
+    opacity: 0.8;
     border-radius: 5px;
-    margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075); 
@@ -1331,5 +1339,4 @@ section{
 
 #searchFunc input[type="submit"]{
     font-size: 16px;
-    margin-left: -10px;
 }

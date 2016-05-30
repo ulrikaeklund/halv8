@@ -1,48 +1,54 @@
 <?php
 include 'core/init.php';
 include 'includes/overall/header.php';
+
+$user_id= $user_data['user_id'];
+$admin = mysql_result(mysql_query("SELECT admin FROM users WHERE user_id = '$user_id'"), 0);
+if ($admin == 0) {
+     echo '<script type="text/javascript">window.location = "index.php"</script>'; 
+     exit();
+}
+
+if(empty($_POST['bannBtn']) === false) {
+    $user_id = $_GET['user_id'];
+    mysql_query("DELETE FROM users WHERE user_id='$user_id'");
+} else if(empty($_POST['adminBtn']) === false) {
+    $user_id = $_GET['user_id'];
+    mysql_query("UPDATE users SET admin=1 WHERE user_id = $user_id");
+}
 ?>
 <section class="tbl"> 
 <h1>Användare</h1>  
 <div  class="tbl-header">
-
-      <?php
-//        $query = "SELECT * FROM users"; 
-//        $result = mysql_query($query);
-//
-//    echo "<table cellpadding="0" cellspacing="0" border="0">
-//          <thead>
-//            <tr>
-//              <th>User_ID</th>
-//              <th>Email</th>
-//              <th>First_name</th>
-//              <th>Last_name</th>
-//              <th>City</th>
-//              <th>Söker</th>
-//              <th>Bjudning_ID</th>
-//              <th>Profile</th>
-//              <th>Om</th>
-//              <th>Facebook-URL</th>
-//              <th>Allergier</th>
-//              <th>Dagar</th>
-//              <th>Rating</th>
-//              <th>Senast_bjudna</th>
-//            </tr>
-//          </thead>
-//        </table>
-//        </div>
-//        <div  class='tbl-content'>
-//        <table cellpadding="0" cellspacing="0" border="0">
-//          <tbody>"; 
-//
-//    while($row = mysql_fetch_array($result)){   //Creates a loop to loop through results
-//    echo "<tr><td>" . $row['user_id'] . "</td><td>" . $row['email'] . "</td></tr>" . $row['first_name'] . "</td><td>" . $row['last_name'] . "</td></tr>" . $row['city'] . "</td><td>" . $row['söker'] . "</td></tr>" . $row['bjudning_id'] . "</td><td>" . $row['profile'] . "</td></tr>" . $row['om'] . "</td><td>" . $row['facebook-url'] . "</td></tr>" . $row['allergier'] . "</td><td>" . $row['dagar'] . "</td></tr>" . $row['rating'] . "</td><td>" . $row['senast_bjudna'] . "</td></tr>";
-//    }
-//
-//    echo "</tbody>
-//            </table>";
-?>
-    
+      <table cellpadding="0" cellspacing="0" border="0">
+      <col width="10%">
+      <col width="30%">
+      <col width="30%">
+      <col width="10%">
+      <col width="10%">
+      <col width="10%">
+      <tr><th>USER_ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>BJUDNING_ID</th>
+            <th>BANN</th>
+            <th>ADMIN</th></tr>     
+      <tbody>      
+      <?php $result = mysql_query("SELECT * FROM users");
+            while ($row = mysql_fetch_assoc($result)) {
+                  echo '<tr><th>' . $row['user_id'] . '</th>
+                        <th>' . $row['first_name'] . ' ' . $row['last_name'] . '</th>
+                        <th>' . $row['email'] . '</th>
+                        <th>' . $row['bjudning_id'] . '</th>
+                        <th><form action="admin_user.php?user_id=' . $row['user_id'] . '" method="post">
+                              <input type="submit" class="btn" value="&#10060;" name="bannBtn">
+                              <input type="submit" class="btn" value="✓" name="adminBtn" id="adminBtn">
+                              </form>
+                        </th></tr>';
+            }?>   
+      </tbody>
+      </table>
+ 
 </div>
 </section>
 <?php include 'includes/overall/footer.php'?>

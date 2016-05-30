@@ -4,7 +4,7 @@ include 'includes/overall/header.php';
 if (logged_in()) {
     echo '<script type="text/javascript">window.location = "bjudning.php"</script>'; 
     exit(); 
-    }
+}
     
 include 'login.php'; ?>
 

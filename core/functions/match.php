@@ -35,7 +35,7 @@ function get_match($user_id) {
 
     //Match found!
     if (count($match_ids) >= 4) {
-        mysql_query("INSERT INTO bjudning (aktiv, dag) VALUES (0, '$dag')") or die (mysql_error());
+        mysql_query("INSERT INTO bjudning (aktiv, dag) VALUES (0, '$dag')");
         $bjudning_id = mysql_insert_id();
         foreach($match_ids as $user_id) {
             mysql_query("UPDATE users SET dagar='', searching=0, bjudning_id=$bjudning_id, accept=0 WHERE user_id = $user_id"); 

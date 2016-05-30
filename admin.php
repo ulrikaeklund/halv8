@@ -2,8 +2,15 @@
 include 'core/init.php';
 include 'includes/overall/header.php';
 
+$user_id= $user_data['user_id'];
+$admin = mysql_result(mysql_query("SELECT admin FROM users WHERE user_id = '$user_id'"), 0);
+if ($admin == 0) {
+     echo '<script type="text/javascript">window.location = "index.php"</script>'; 
+     exit();
+}
+
 if(empty($_POST['raderaBtn']) === false) {
-    $comment_id = $_POST['comment_id'];
+    $comment_id = $_GET['comment_id'];
     mysql_query("DELETE FROM comments WHERE comment_id='$comment_id'");
 }
 ?>
@@ -14,11 +21,6 @@ if(empty($_POST['raderaBtn']) === false) {
                     <?php $result=mysql_query("SELECT count(*) as total from users");
                     $data=mysql_fetch_assoc($result);
                     echo '<h1>' . $data['total'] . '</h1>'; ?>
-                </div>
-                <div id="box2">
-                    <h3>Antal aktiva användare</h3>
-                    <?php 
-                    echo '<h1>' . 1 . '</h1>'; ?>
                 </div>
                 <a href="admin_user.php"><button class="btn" id="toUsers" action="admin_user.php">Redigera användare</button></a>
             </section>
@@ -82,7 +84,6 @@ if(empty($_POST['raderaBtn']) === false) {
                         </table>
                     </div>
                 </section>
-                <a href="admin_bjud.php"><button class="btn" id="toBjud" action="admin_bjud.php">Redigera bjudningar</button></a>
 	   </section>
 	   <aside id="sidebar">
            <section class="commentstable">
@@ -111,7 +112,7 @@ if(empty($_POST['raderaBtn']) === false) {
                                   echo '<tr><th>' . $row['user_id'] . '</th>
                                         <th>' . $row['text'] . '</th>
                                         <th><form action="admin.php?comment_id=' . $row['comment_id'] . '" method="post">
-                                              <input type="submit" class="btn" value="RADERA" name="raderaBtn" id="raderaBtn">
+                                              <input type="submit" class="btn" value="&#10060;" name="raderaBtn" id="raderaBtn">
                                             </form>
                                         </th></tr>';
                               }?>   
@@ -119,7 +120,6 @@ if(empty($_POST['raderaBtn']) === false) {
                    </table>
                </div>
             </section>
-           <a href="admin_comments.php"><button class="btn" id="toComments">Redigera kommentarer</button></a>
             </aside>
         </div>
 
